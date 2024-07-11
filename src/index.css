@@ -1,11 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --xl-font-size: 27px;
   --s-font-size: 20px;
   --xs-font-size: 16px;
-  --green: #3e7422;
+  /* --green: #3e7422;
   --red: #8b002a;
   --blue: #1877f2;
-  --orange: #ed7609;
+  --orange: #ed7609; */
   --main-transition: 0.3s;
   direction: rtl;
 }
@@ -41,4 +45,19 @@ ul {
 }
 a {
   text-decoration: none;
+}
+/* tailwind */
+@layer components {
+  .translate-center-y {
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+  }
+}
+@layer components {
+  .translate-center-x {
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+  }
 }

@@ -10,16 +10,18 @@ const HeaderWordList = () => {
   ];
 
   return (
-    <ul>
+    <ul className="flex gap-30">
       {content.map((word, index) => (
         <li key={index}>
-          <Link to={word.navigateTo} className="c-white">
+          <Link to={word.navigateTo} className="text-white">
             {word.content}
           </Link>
         </li>
       ))}
-      <li className="c-white pointer">
-        المواضيع <BiChevronDown />
+      <li className="text-white cursor-pointer">
+        <div>
+          المواضيع <BiChevronDown className="inline" />
+        </div>
       </li>
     </ul>
   );

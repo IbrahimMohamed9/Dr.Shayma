@@ -1,21 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const FooterWordList = () => {
-  const content = [
-    { navigateTo: "/home", content: "الرئيسية" },
-    { navigateTo: "/aboutUs", content: "اعرف عنا" },
-    { navigateTo: "/contactUs", content: "تواصل معانا" },
-  ];
+const FooterWordList = (props) => {
+  const content = props.content;
 
   return (
     <ul>
-      {content.map((word, index) => (
-        <li key={index}>
-          <Link to={word.navigateTo} className="c-white">
-            {word.content}
-          </Link>
-        </li>
-      ))}
+      <li className="text-white text-2xl mb-1">
+        {content[0].navigateTo ? (
+          <Link to={content[0].navigateTo}>{content[0].content}</Link>
+        ) : (
+          content[0].content
+        )}
+      </li>
+      {content.map((word, index) =>
+        index ? (
+          <li key={index}>
+            <Link to={word.navigateTo} className="text-white mb-3 text-sm">
+              {word.content}
+            </Link>
+          </li>
+        ) : null
+      )}
     </ul>
   );
 };
