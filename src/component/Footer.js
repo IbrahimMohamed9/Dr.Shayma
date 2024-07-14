@@ -4,7 +4,7 @@ import styles from "../assets/css/footer.module.css";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
-import { logoDescription } from "../assets/utils/Constants";
+import { LOGO_DESCRIPTION } from "../assets/utils/Constants";
 import FooterWordList from "./ui/FooterWordList";
 const Footer = () => {
   const whoWeAre = [
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="flex items-center flex-col">
           <img
             src={logo}
-            alt={logoDescription}
+            alt={LOGO_DESCRIPTION}
             className={`${styles.logo} mb-8`}
           />
           <ul className="flex gap-10">
