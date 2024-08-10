@@ -16,7 +16,10 @@ const FooterWordList = (props) => {
       {content.map((word, index) =>
         index ? (
           <li key={index}>
-            <Link to={word.navigateTo} className="text-white mb-3 text-sm">
+            <Link
+              to={word.navigateTo}
+              className="text-white mb-3 text-sm hover:text-main-green transition-colors duration-300"
+            >
               {word.content}
             </Link>
           </li>

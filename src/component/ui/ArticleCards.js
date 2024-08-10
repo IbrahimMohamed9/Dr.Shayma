@@ -55,7 +55,7 @@ const ArticleCards = () => {
   ];
 
   return (
-    <div className="flex gap-5 overflow-x-auto my-6">
+    <div className="flex gap-5 overflow-x-auto my-6 px-10 overflow-visible">
       {cardsList.map((card, index) => (
         <ArticleCard
           key={index}

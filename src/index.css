@@ -46,22 +46,23 @@ ul {
 a {
   text-decoration: none;
 }
-/* tailwind */
+/* custome components to tailwind */
 @layer components {
   .translate-center-y {
     transform: translateY(-50%);
     top: 50%;
     position: relative;
   }
-}
-@layer components {
-  .translate-center-x {
+  .translate-center-l {
     transform: translateX(-50%);
     left: 50%;
     position: relative;
   }
+  .translate-center-r {
+    transform: translateX(50%);
+    right: 50%;
+    position: relative;
 }
-@layer components {
   .block-fit {
     width: fit-content;
     block-size: fit-content;

@@ -37,6 +37,10 @@ module.exports = {
         360: "360px",
         190: "190px",
       },
+      lineHeight: {
+        "extra-loose": "2.5",
+        20: "5rem",
+      },
     },
   },
   plugins: [],

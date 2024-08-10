@@ -9,17 +9,20 @@ const HeaderWordList = () => {
     { navigateTo: "/contactUs", content: "تواصل معانا" },
   ];
 
+  const wordClasses =
+    "hover:text-main-green text-white w-20 transition-colors duration-300 cursor-pointer";
+
   return (
     <ul className="flex gap-30">
       {content.map((word, index) => (
-        <li key={index}>
-          <Link to={word.navigateTo} className="text-white">
+        <li key={index} className={wordClasses}>
+          <Link to={word.navigateTo} className="text-inherit leading-20">
             {word.content}
           </Link>
         </li>
       ))}
-      <li className="text-white cursor-pointer">
-        <div>
+      <li className={wordClasses}>
+        <div className="leading-20">
           المواضيع <BiChevronDown className="inline" />
         </div>
       </li>

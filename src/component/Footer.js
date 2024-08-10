@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../assets/images/logo.webp";
-import styles from "../assets/css/footer.module.css";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
@@ -37,28 +36,53 @@ const Footer = () => {
       content: "التربية الجنسية في الإسلام",
     },
   ];
+
+  const commonSvgClasses =
+    " w-8  h-8 border-2 p-1 rounded-full transition-all duration-300";
+
+  const socialMediaIcons = [
+    {
+      icon: FaXTwitter,
+      styles: "border-white text-white hover:bg-white hover:text-black",
+      // TODO: fix the links
+      link: "https://www.facebook.com/profile.php?id=100002421841995",
+    },
+    {
+      icon: BsWhatsapp,
+      styles:
+        "border-whatsapp text-whatsapp hover:bg-whatsapp hover:text-white",
+      // TODO: fix the links
+      link: "https://www.facebook.com/profile.php?id=100002421841995",
+    },
+    {
+      icon: FaTelegramPlane,
+      styles:
+        "border-telegram text-telegram hover:bg-telegram hover:text-white",
+      // TODO: fix the links
+      link: "https://www.facebook.com/profile.php?id=100002421841995",
+    },
+    {
+      icon: FaFacebookF,
+      styles:
+        "border-facebook text-facebook hover:bg-facebook hover:text-white",
+      link: "https://www.facebook.com/profile.php?id=100002421841995",
+    },
+  ];
   return (
-    <footer className="bg-black py-12">
+    <footer className="bg-black py-12 z-10">
       <div className={`container  flex justify-between flex-row-reverse`}>
         <div className="flex items-center flex-col">
-          <img
-            src={logo}
-            alt={LOGO_DESCRIPTION}
-            className={`${styles.logo} mb-8`}
-          />
+          <img src={logo} alt={LOGO_DESCRIPTION} className="w-32 mb-8" />
           <ul className="flex gap-10">
-            <li>
-              <FaXTwitter className="border-2 rounded-full border-white text-white hover:bg-white hover:text-black" />
-            </li>
-            <li>
-              <BsWhatsapp className="border-2 rounded-full border-whatsapp text-whatsapp hover:bg-whatsapp hover:text-white" />
-            </li>
-            <li>
-              <FaTelegramPlane className="border-2 rounded-full border-telegram text-telegram hover:bg-telegram hover:text-white" />
-            </li>
-            <li>
-              <FaFacebookF className="border-2 rounded-full border-facebook text-facebook hover:bg-facebook hover:text-white" />
-            </li>
+            {socialMediaIcons.map((item, index) => (
+              <li key={index}>
+                <a href={item.link}>
+                  <item.icon
+                    className={item.styles + " " + commonSvgClasses}
+                  ></item.icon>
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
         <FooterWordList content={mostPopularArticles} />

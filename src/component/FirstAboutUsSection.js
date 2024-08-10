@@ -1,10 +1,7 @@
 import React from "react";
-import aqidtna from "../assets/images/aqidtna.png";
-import rideWithUs from "../assets/images/rideWithUs.jpg";
-import childrenAqidat from "../assets/images/childrenAqidat.jpg";
 import Button from "./ui/Button";
 
-const FirstHomeSection = () => {
+const FirstAboutUsSection = (props) => {
   return (
     <div className="bg-gradient-to-l from-white via-cyan to-cyan min-h-fit py-5 w-full">
       <div className="container border-[#2D3648] border-5 h-full py-2 md:py-5 flex flex-col-reverse md:flex-row">
@@ -23,27 +20,11 @@ const FirstHomeSection = () => {
             fontSize="text-xl"
           />
         </div>
-        <div className="flex gap-7 justify-center mb-5">
-          <div>
-            <img
-              src={childrenAqidat}
-              alt="عقيدتنا"
-              className="w-36 translate-center-y rounded-lg"
-            />
-          </div>
-
-          <div>
-            <img
-              src={rideWithUs}
-              alt="يا بني اركب معنا"
-              className="w-36 mb-8 rounded-lg"
-            />
-            <img src={aqidtna} alt="عثيدتنا" className="w-36" />
-          </div>
-        </div>
       </div>
     </div>
   );
 };
 
-export default FirstHomeSection;
+FirstAboutUsSection.propTypes = {};
+
+export default FirstAboutUsSection;

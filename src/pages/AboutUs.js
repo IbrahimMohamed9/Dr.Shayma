@@ -1,7 +1,8 @@
 import React from "react";
+import FirstAboutUsSection from "../component/FirstAboutUsSection";
 
 const AboutUs = () => {
-  return <div>AboutUs</div>;
+  return <FirstAboutUsSection />;
 };
 
 export default AboutUs;

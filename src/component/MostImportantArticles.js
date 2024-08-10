@@ -1,13 +1,12 @@
 import React from "react";
 import { MOST_IMPORTANT_ARTICLES } from "../assets/utils/Constants";
 import ArticleCards from "./ui/ArticleCards";
+import SectionHeader from "./SectionHeader";
 
 function MostImportantArticles() {
   return (
-    <div className="my-14">
-      <h1 className="text-6xl font-bold text-header-color">
-        {MOST_IMPORTANT_ARTICLES}
-      </h1>
+    <div className="mt-14">
+      <SectionHeader content={MOST_IMPORTANT_ARTICLES} />
       <ArticleCards />
     </div>
   );
