@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/components/**/*.js", "./src/**/*.js", "./src/pages/**/*.js"],
   theme: {
+    borderRadius: {
+      16: "16rem",
+    },
     extend: {
       gap: {
         30: "30px",

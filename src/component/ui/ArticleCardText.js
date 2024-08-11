@@ -1,7 +1,7 @@
 import React from "react";
 import {
   RASING,
-  DOCTRINE,
+  DOCTRINAL_EDUCATION,
   HEALTHY,
   FAMILY_AND_LIFE,
 } from "../../assets/utils/Constants";
@@ -10,7 +10,7 @@ function getCardCategoryColor(category) {
   switch (category) {
     case RASING:
       return "main-blue";
-    case DOCTRINE:
+    case DOCTRINAL_EDUCATION:
       return "main-orange";
     case HEALTHY:
       return "main-green";

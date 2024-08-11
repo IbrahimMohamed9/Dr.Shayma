@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  DOCTRINE,
+  DOCTRINAL_EDUCATION,
   FAMILY_AND_LIFE,
   HEALTHY,
   RASING,
@@ -10,7 +10,7 @@ import MainTopicImage from "./ui/MainTopicImage";
 import SectionHeader from "./SectionHeader";
 
 const MainTopics = () => {
-  const topics = [DOCTRINE, FAMILY_AND_LIFE, HEALTHY, RASING];
+  const topics = [DOCTRINAL_EDUCATION, FAMILY_AND_LIFE, HEALTHY, RASING];
   return (
     <div className="mt-14">
       <SectionHeader content={MAIN_TOPICS} />

@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  DOCTRINE,
+  DOCTRINAL_EDUCATION,
   FAMILY_AND_LIFE,
   HEALTHY,
   RASING,
@@ -19,7 +19,7 @@ function imageContent(category) {
         color: "main-orange",
         imgSrc: rasingImage,
       };
-    case DOCTRINE:
+    case DOCTRINAL_EDUCATION:
       return {
         category: category,
         color: "main-blue",
