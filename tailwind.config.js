@@ -1,11 +1,34 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/components/**/*.js", "./src/**/*.js", "./src/pages/**/*.js"],
+  safelist: [
+    "border-main-blue",
+    "border-main-orange",
+    "border-main-blue",
+    "border-main-orange",
+    "hover:bg-main-blue",
+    "hover:bg-main-orange",
+    "hover:bg-main-green",
+    "hover:bg-main-red",
+  ],
   theme: {
-    borderRadius: {
-      16: "16rem",
-    },
     extend: {
+      screens: {
+        xs: "475px",
+        // 'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+        // 'md': '768px',
+        // => @media (min-width: 768px) { ... }
+        // 'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+        // 'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+        // '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
+      borderRadius: {
+        16: "16rem",
+      },
       gap: {
         30: "30px",
         10: "10px",

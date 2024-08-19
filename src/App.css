@@ -24,3 +24,9 @@
     width: 1170px;
   }
 }
+
+/* TODO::fix this */
+*::selection{
+  color: black;
+  background-color: blue;
+}
