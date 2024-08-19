@@ -4,8 +4,8 @@ module.exports = {
   safelist: [
     "border-main-blue",
     "border-main-orange",
-    "border-main-blue",
-    "border-main-orange",
+    "border-main-green",
+    "border-main-red",
     "hover:bg-main-blue",
     "hover:bg-main-orange",
     "hover:bg-main-green",
