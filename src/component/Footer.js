@@ -69,7 +69,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="bg-black py-12 z-10">
+    <footer className="bg-black py-12">
       <div className={`container  flex justify-between flex-row-reverse`}>
         <div className="flex items-center flex-col">
           <img src={logo} alt={LOGO_DESCRIPTION} className="w-32 mb-8" />

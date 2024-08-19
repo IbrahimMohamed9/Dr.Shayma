@@ -6,7 +6,7 @@ import Button from "./ui/Button";
 
 const FirstHomeSection = () => {
   return (
-    <div className="bg-gradient-to-l from-white via-cyan to-cyan min-h-fit py-5 w-full">
+    <div className="bg-gradient-to-l from-white via-cyan to-cyan min-h-fit p-5 w-full">
       <div className="container border-[#2D3648] border-5 h-full py-2 md:py-5 flex flex-col-reverse md:flex-row">
         <div className="md:w-2/3 px-2 min-h-fit text-2xl md:text-4xl md:flex md:flex-col md:justify-center">
           <p className="md:block-fit">

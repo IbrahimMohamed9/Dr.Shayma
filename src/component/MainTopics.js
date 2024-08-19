@@ -2,19 +2,19 @@ import React from "react";
 import {
   DOCTRINAL_EDUCATION,
   FAMILY_AND_LIFE,
-  HEALTHY,
-  RASING,
+  HEALTH,
+  RAISING,
 } from "../assets/utils/Constants";
 import { MAIN_TOPICS } from "../assets/utils/Constants";
 import MainTopicImage from "./ui/MainTopicImage";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "./ui/SectionHeader";
 
 const MainTopics = () => {
-  const topics = [DOCTRINAL_EDUCATION, FAMILY_AND_LIFE, HEALTHY, RASING];
+  const topics = [DOCTRINAL_EDUCATION, FAMILY_AND_LIFE, HEALTH, RAISING];
   return (
     <div className="mt-14">
       <SectionHeader content={MAIN_TOPICS} />
-      <div className="grid grid-cols-2">
+      <div className="md:grid md:grid-cols-2 max-w-6xl mx-auto">
         {topics.map((topic, index) => (
           <MainTopicImage category={topic} key={index} />
         ))}
