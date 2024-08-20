@@ -16,7 +16,10 @@ const HeaderWordList = () => {
     <ul className="flex gap-30">
       {content.map((word, index) => (
         <li key={index} className={wordClasses}>
-          <Link to={word.navigateTo} className="text-inherit leading-20">
+          <Link
+            to={word.navigateTo}
+            className="text-inherit leading-20 h-20 w-20 block text-center"
+          >
             {word.content}
           </Link>
         </li>

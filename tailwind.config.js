@@ -15,16 +15,6 @@ module.exports = {
     extend: {
       screens: {
         xs: "475px",
-        // 'sm': '640px',
-        // => @media (min-width: 640px) { ... }
-        // 'md': '768px',
-        // => @media (min-width: 768px) { ... }
-        // 'lg': '1024px',
-        // => @media (min-width: 1024px) { ... }
-        // 'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
-        // '2xl': '1536px',
-        // => @media (min-width: 1536px) { ... }
       },
       borderRadius: {
         16: "16rem",
@@ -50,7 +40,6 @@ module.exports = {
         "header-color": "#2D3648",
         telegram: "#00b0f2",
         whatsapp: "#00e510",
-        facebook: "#1877f2",
         gray: {
           700: "#616161",
         },
