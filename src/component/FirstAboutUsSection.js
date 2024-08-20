@@ -19,7 +19,7 @@ const FirstAboutUsSection = (props) => {
           الأمهات عن التربية المستمدة من الوحيين، الخالية من التغريب.
         </p>
         <Button
-          content="المواضيع"
+          content="القائمين علي العمل"
           className="bg-main-green text-white w-fit mt-4 mx-auto block"
           fontSize="text-xl"
         />

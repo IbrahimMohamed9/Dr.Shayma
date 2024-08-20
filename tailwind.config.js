@@ -36,8 +36,8 @@ module.exports = {
         "main-red": "#8b002a",
         "main-blue": "#1877f2",
         "main-orange": "#ed7609",
+        "main-dark-blue": "#2D3648",
         cyan: "#00B0F2",
-        "header-color": "#2D3648",
         telegram: "#00b0f2",
         whatsapp: "#00e510",
         gray: {
