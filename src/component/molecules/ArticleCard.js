@@ -1,5 +1,5 @@
 import React from "react";
-import ArticleCardText from "./ArticleCardText";
+import ArticleCardText from "../atoms/ArticleCardText";
 
 const ArticleCard = (props) => {
   const { category, title, description, date, imgSrc } = props;

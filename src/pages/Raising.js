@@ -1,7 +1,7 @@
 import React from "react";
-import SubjectPage from "../component/SubjectPage";
 import { RAISING } from "../assets/utils/Constants";
 import mainImage from "../assets/images/الاسرة والحياة رئيسي.png";
+import SubjectTemplate from "../component/templates/SubjectTemplate";
 
 const Raising = () => {
   const categories = [
@@ -39,7 +39,7 @@ const Raising = () => {
   ];
 
   return (
-    <SubjectPage
+    <SubjectTemplate
       categories={categories}
       title={RAISING}
       articles={articles}

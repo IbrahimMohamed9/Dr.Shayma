@@ -1,7 +1,7 @@
 import React from "react";
-import { MOST_IMPORTANT_ARTICLES } from "../assets/utils/Constants";
-import ArticleCards from "./ui/ArticleCards";
-import SectionHeader from "./ui/SectionHeader";
+import { MOST_IMPORTANT_ARTICLES } from "../../assets/utils/Constants";
+import SectionHeader from "./../atoms/SectionHeader";
+import ArticleCards from "./ArticleCards";
 
 function MostImportantArticles() {
   return (

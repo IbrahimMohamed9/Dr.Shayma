@@ -1,10 +1,10 @@
 import React from "react";
-import SectionHeader from "./ui/SectionHeader";
+import SectionHeader from "./../atoms/SectionHeader";
 
 const SecondAboutUsSection = () => {
   return (
     <div className="bg-main-red bg-opacity-30 text-center py-4">
-      <SectionHeader content="دورنا" />
+      <SectionHeader content="دورنا" className="leading-[2.6rem]" />
       <p className="text-center -mt-4 text-2xl container">
         وتحذير الأمهات من كل ما يفسد الفطرة فيقطع عليها طريق تربيتهم، بل إن في
         عصرنا هذا غاب دور الحداثة وكثير من الأمهات في تعليم الأمهات

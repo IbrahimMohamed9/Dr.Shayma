@@ -1,8 +1,8 @@
 import React from "react";
-import FirstAboutUsSection from "../component/FirstAboutUsSection";
-import SecondAboutUsSection from "../component/SecondAboutUsSection";
-import BooksSection from "../component/ui/BooksSection";
 import img from "./../assets/images/100x150.png";
+import FirstAboutUsSection from "./../component/organisms/FirstAboutUsSection";
+import SecondAboutUsSection from "./../component/organisms/SecondAboutUsSection";
+import BooksSection from "./../component/organisms/BooksSection";
 
 const AboutUs = () => {
   const books = [

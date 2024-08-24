@@ -1,13 +1,16 @@
 import React from "react";
-import aqidtna from "../assets/images/aqidtna.png";
-import rideWithUs from "../assets/images/rideWithUs.jpg";
-import childrenAqidat from "../assets/images/childrenAqidat.jpg";
-import Button from "./ui/Button";
-import BorderAroundSection from "./ui/BorderAroundSection";
+import aqidtna from "./../../assets/images/aqidtna.png";
+import rideWithUs from "./../../assets/images/rideWithUs.jpg";
+import childrenAqidat from "./../../assets/images/childrenAqidat.jpg";
+import BorderAroundSection from "./../atoms/BorderAroundSection";
+import Button from "./../atoms/Button";
 
 const FirstHomeSection = () => {
   return (
-    <BorderAroundSection bg_color="bg-gradient-to-l from-white via-cyan to-cyan">
+    <BorderAroundSection
+      bgColor="bg-gradient-to-l from-white via-cyan to-cyan"
+      flex={true}
+    >
       <div className="md:w-2/3 px-2 min-h-fit text-2xl md:text-4xl md:flex md:flex-col md:justify-center">
         <p className="md:block-fit">
           عقيدة سليمة هي أثمن ما نقدمه لأبنائنا؛ فكيف نغرسها في نفوسهم؟ هذا هو

@@ -1,11 +1,11 @@
 import React from "react";
-import SubjectPageImage from "./ui/SubjectPageImage";
-import SubjectCategoriesList from "./ui/SubjectCategoriesList";
-import SectionHeader from "./ui/SectionHeader";
-import SubjectPageArticleCard from "./ui/SubjectPageArticleCard";
-import utils from "./../assets/utils/utils";
+import utils from "../../assets/utils/utils";
+import SubjectPageImage from "./../atoms/SubjectPageImage";
+import SectionHeader from "./../atoms/SectionHeader";
+import SubjectCategoriesList from "./../molecules/SubjectCategoriesList";
+import SubjectPageArticleCard from "./../organisms/SubjectPageArticleCard";
 
-const SubjectPage = (props) => {
+const SubjectTemplate = (props) => {
   const { title, categories, articles } = props;
   const { bigImg, color } = utils.categoryDetails(props.category);
   return (
@@ -20,4 +20,4 @@ const SubjectPage = (props) => {
   );
 };
 
-export default SubjectPage;
+export default SubjectTemplate;

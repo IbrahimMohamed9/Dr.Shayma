@@ -1,5 +1,5 @@
 import React from "react";
-import BookCardText from "./BookCardText";
+import BookCardText from "../atoms/BookCardText";
 
 const BookCard = (props) => {
   const { img, title } = props;

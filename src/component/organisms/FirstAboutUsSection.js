@@ -1,15 +1,15 @@
 import React from "react";
-import Button from "./ui/Button";
-import BorderAroundSection from "./ui/BorderAroundSection";
-import aqidtna from "../assets/images/aqidtna.png";
-import SectionHeader from "./ui/SectionHeader";
+import aqidtna from "./../../assets/images/aqidtna.png";
+import BorderAroundSection from "./../atoms/BorderAroundSection";
+import SectionHeader from "./../atoms/SectionHeader";
+import Button from "./../atoms/Button";
 
 const FirstAboutUsSection = (props) => {
   return (
-    <BorderAroundSection bg_color="bg-main-blue bg-opacity-30">
+    <BorderAroundSection bgColor="bg-main-blue bg-opacity-30 py-4" flex={true}>
       <div className="md:w-2/3 px-2 min-h-fit text-2xl md:text-4xl md:flex md:flex-col md:justify-center max-w-xl">
         <SectionHeader content="اعرف عنا" className="text-center" />
-        <p className="md:block-fit text-2xl">
+        <p className="md:block-fit text-2xl text-center">
           طبيبة مصرية، درست بالمعاهد الأزهرية، وتخرجت من كلية الطب والجراحة
           جامعة الأزهر في عام 2001، زوجة وأم لشابين وفتاتين.
           <br />

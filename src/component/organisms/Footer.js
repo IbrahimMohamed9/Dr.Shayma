@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../assets/images/logo.webp";
+import logo from "./../../assets/images/logo.webp";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
-import { LOGO_DESCRIPTION } from "../assets/utils/Constants";
-import FooterWordList from "./ui/FooterWordList";
+import { LOGO_DESCRIPTION } from "../../assets/utils/Constants";
+import FooterWordList from "./../atoms/FooterWordList";
 const Footer = () => {
   const whoWeAre = [
     { navigateTo: "/whoWeAre", content: "من نحن؟" },
@@ -44,8 +44,7 @@ const Footer = () => {
     {
       icon: FaXTwitter,
       styles: "border-white text-white hover:bg-white hover:text-black",
-      // TODO: fix the links
-      link: "https://www.facebook.com/profile.php?id=100002421841995",
+      link: "https://x.com/dr_shaymaaa",
     },
     {
       icon: BsWhatsapp,

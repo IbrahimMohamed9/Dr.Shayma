@@ -1,9 +1,9 @@
 import React from "react";
-import HeaderWordList from "./ui/HeaderWordList";
-import logo from "../assets/images/logo.webp";
+import logo from "./../../assets/images/logo.webp";
 import { Link } from "react-router-dom";
-import Button from "./ui/Button";
-import { LOGO_DESCRIPTION } from "../assets/utils/Constants";
+import { LOGO_DESCRIPTION } from "./../../assets/utils/Constants";
+import HeaderWordList from "./../atoms/HeaderWordList";
+import Button from "./../atoms/Button";
 
 const Header = () => {
   const buttomsClasses = "mr-2 translate-center-y ";

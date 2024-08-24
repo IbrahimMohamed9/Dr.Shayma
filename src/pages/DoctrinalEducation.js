@@ -1,7 +1,7 @@
 import React from "react";
-import SubjectPage from "../component/SubjectPage";
 import { DOCTRINAL_EDUCATION } from "../assets/utils/Constants";
 import mainImage from "../assets/images/الاسرة والحياة رئيسي.png";
+import SubjectTemplate from "../component/templates/SubjectTemplate";
 
 const DoctrinalEducation = () => {
   const categories = [
@@ -41,7 +41,7 @@ const DoctrinalEducation = () => {
   ];
 
   return (
-    <SubjectPage
+    <SubjectTemplate
       categories={categories}
       title={DOCTRINAL_EDUCATION}
       articles={articles}

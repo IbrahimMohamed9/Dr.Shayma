@@ -1,5 +1,5 @@
 import React from "react";
-import SubjectCategory from "./SubjectCategory";
+import SubjectCategory from "../atoms/SubjectCategory";
 
 const SubjectCategoriesList = (props) => {
   return (

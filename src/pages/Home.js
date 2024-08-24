@@ -1,7 +1,7 @@
 import React from "react";
-import FirstHomeSection from "../component/FirstHomeSection";
-import MostImportantArticles from "../component/MostImportantArticles";
-import MainTopics from "../component/MainTopics";
+import FirstHomeSection from "./../component/organisms/FirstHomeSection";
+import MainTopics from "../component/organisms/MainTopics";
+import MostImportantArticles from "./../component/organisms/MostImportantArticles";
 
 const Home = () => {
   return (

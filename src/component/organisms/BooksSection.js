@@ -1,6 +1,6 @@
 import React from "react";
-import SectionHeader from "./SectionHeader";
-import BookCard from "./BookCard";
+import SectionHeader from "../atoms/SectionHeader";
+import BookCard from "./../molecules/BookCard";
 
 const BooksSection = (props) => {
   return (

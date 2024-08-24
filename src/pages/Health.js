@@ -1,7 +1,7 @@
 import React from "react";
-import SubjectPage from "../component/SubjectPage";
 import { HEALTH } from "../assets/utils/Constants";
 import mainImage from "../assets/images/الاسرة والحياة رئيسي.png";
+import SubjectTemplate from "../component/templates/SubjectTemplate";
 
 const Health = () => {
   const categories = [
@@ -39,7 +39,7 @@ const Health = () => {
   ];
 
   return (
-    <SubjectPage
+    <SubjectTemplate
       categories={categories}
       title={HEALTH}
       articles={articles}
