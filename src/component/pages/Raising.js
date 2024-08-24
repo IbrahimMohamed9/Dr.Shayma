@@ -1,18 +1,16 @@
 import React from "react";
-import { DOCTRINAL_EDUCATION } from "../assets/utils/Constants";
-import mainImage from "../assets/images/الاسرة والحياة رئيسي.png";
-import SubjectTemplate from "../component/templates/SubjectTemplate";
+import mainImage from "../../assets/images/الاسرة والحياة رئيسي.png";
+import SubjectTemplate from "../templates/SubjectTemplate";
+import { RAISING } from "../../assets/utils/Constants";
 
-const DoctrinalEducation = () => {
+const Raising = () => {
   const categories = [
-    "أسئلة الأبناء العقائدية",
-    "الأقصى عقيدة",
-    "التربية بالأذكار",
-    "أحسن القصص",
-    "أسماء الله الحسنى",
-    "الرموز و التمائم",
-    "الشركات المعاصرة",
-    "غرس عقيدة الأبناء",
+    "إضاءات تربوية",
+    "من الوحيين",
+    "التربية بالقصة",
+    "يا بني اركب معنا",
+    "المباح من الكلام في التربية الجنسية في الإسلام",
+    "حياتنا والشاشات",
   ];
 
   const articles = [
@@ -43,11 +41,11 @@ const DoctrinalEducation = () => {
   return (
     <SubjectTemplate
       categories={categories}
-      title={DOCTRINAL_EDUCATION}
+      title={RAISING}
       articles={articles}
-      category={DOCTRINAL_EDUCATION}
+      category={RAISING}
     />
   );
 };
 
-export default DoctrinalEducation;
+export default Raising;

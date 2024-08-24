@@ -1,16 +1,18 @@
 import React from "react";
-import { HEALTH } from "../assets/utils/Constants";
-import mainImage from "../assets/images/الاسرة والحياة رئيسي.png";
-import SubjectTemplate from "../component/templates/SubjectTemplate";
+import { DOCTRINAL_EDUCATION } from "../../assets/utils/Constants";
+import mainImage from "../../assets/images/الاسرة والحياة رئيسي.png";
+import SubjectTemplate from "../templates/SubjectTemplate";
 
-const Health = () => {
+const DoctrinalEducation = () => {
   const categories = [
-    "إضاءات تربوية",
-    "من الوحيين",
-    "التربية بالقصة",
-    "يا بني اركب معنا",
-    "المباح من الكلام في التربية الجنسية في الإسلام",
-    "حياتنا والشاشات",
+    "أسئلة الأبناء العقائدية",
+    "الأقصى عقيدة",
+    "التربية بالأذكار",
+    "أحسن القصص",
+    "أسماء الله الحسنى",
+    "الرموز و التمائم",
+    "الشركات المعاصرة",
+    "غرس عقيدة الأبناء",
   ];
 
   const articles = [
@@ -41,11 +43,11 @@ const Health = () => {
   return (
     <SubjectTemplate
       categories={categories}
-      title={HEALTH}
+      title={DOCTRINAL_EDUCATION}
       articles={articles}
-      category={HEALTH}
+      category={DOCTRINAL_EDUCATION}
     />
   );
 };
 
-export default Health;
+export default DoctrinalEducation;

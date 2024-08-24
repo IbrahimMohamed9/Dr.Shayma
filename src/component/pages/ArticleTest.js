@@ -1,7 +1,7 @@
 import React from "react";
-import ArticlePage from "../component/templates/ArticleTemplate";
-import { DOCTRINAL_EDUCATION } from "../assets/utils/Constants";
-import mainImage from "../assets/images/التربية العقائدية مقال.png";
+import ArticlePage from "../templates/ArticleTemplate";
+import { DOCTRINAL_EDUCATION } from "../../assets/utils/Constants";
+import mainImage from "../../assets/images/التربية العقائدية مقال.png";
 
 const ArticleTest = () => {
   const articleTitle = "تهيئة ابني لمرحلة البلوغ";

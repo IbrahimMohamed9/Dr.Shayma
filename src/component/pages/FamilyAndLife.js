@@ -1,9 +1,9 @@
 import React from "react";
-import { RAISING } from "../assets/utils/Constants";
-import mainImage from "../assets/images/الاسرة والحياة رئيسي.png";
-import SubjectTemplate from "../component/templates/SubjectTemplate";
+import { FAMILY_AND_LIFE } from "../../assets/utils/Constants";
+import mainImage from "../../assets/images/الاسرة والحياة رئيسي.png";
+import SubjectTemplate from "../templates/SubjectTemplate";
 
-const Raising = () => {
+const FamilyAndLife = () => {
   const categories = [
     "إضاءات تربوية",
     "من الوحيين",
@@ -41,11 +41,11 @@ const Raising = () => {
   return (
     <SubjectTemplate
       categories={categories}
-      title={RAISING}
+      title={FAMILY_AND_LIFE}
       articles={articles}
-      category={RAISING}
+      category={FAMILY_AND_LIFE}
     />
   );
 };
 
-export default Raising;
+export default FamilyAndLife;
