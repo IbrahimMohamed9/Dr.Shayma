@@ -1,5 +1,5 @@
 import React from "react";
-import ArticlePage from "../templates/ArticleTemplate";
+import ArticleTemplate from "../templates/ArticleTemplate";
 import { DOCTRINAL_EDUCATION } from "../../assets/utils/Constants";
 import mainImage from "../../assets/images/التربية العقائدية مقال.png";
 
@@ -20,7 +20,7 @@ const ArticleTest = () => {
     "إذا بدأ الطفل بسؤالك، فلا تنهريه أو توبخيه وتمنعيه من الكلام في هذه الأمور.",
   ];
   return (
-    <ArticlePage
+    <ArticleTemplate
       category={DOCTRINAL_EDUCATION}
       subcategory={"عقيدة طفلي"}
       img={mainImage}

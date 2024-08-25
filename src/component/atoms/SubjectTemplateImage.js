@@ -1,6 +1,6 @@
 import React from "react";
 
-const SubjectPageImage = (props) => {
+const SubjectTemplateImage = (props) => {
   const { title, img } = props;
   return (
     <div className="mb-6 mx-auto max-w-6xl">
@@ -9,4 +9,4 @@ const SubjectPageImage = (props) => {
   );
 };
 
-export default SubjectPageImage;
+export default SubjectTemplateImage;
