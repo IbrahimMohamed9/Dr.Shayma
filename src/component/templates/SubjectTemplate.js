@@ -3,7 +3,7 @@ import utils from "../../assets/utils/utils";
 import SubjectPageImage from "./../atoms/SubjectPageImage";
 import SectionHeader from "./../atoms/SectionHeader";
 import SubjectCategoriesList from "./../molecules/SubjectCategoriesList";
-import SubjectPageArticleCard from "./../organisms/SubjectPageArticleCard";
+import SubjectTemplateArticleCards from "../organisms/SubjectTemplateArticleCards";
 
 const SubjectTemplate = (props) => {
   const { title, categories, articles } = props;
@@ -14,7 +14,7 @@ const SubjectTemplate = (props) => {
       <div className="container">
         <SectionHeader content="المقالات" />
         <SubjectCategoriesList categories={categories} color={color} />
-        <SubjectPageArticleCard articles={articles} color={color} />
+        <SubjectTemplateArticleCards articles={articles} color={color} />
       </div>
     </div>
   );
