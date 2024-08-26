@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/components/**/*.js", "./src/**/*.js", "./src/pages/**/*.js"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   safelist: [
     "border-main-blue",
     "border-main-orange",
