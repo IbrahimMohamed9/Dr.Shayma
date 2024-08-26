@@ -18,7 +18,6 @@ This repository contains the code for Dr. Shaima's personal website. The website
 
 - HTML
 - CSS
-- JavaScript
 - React.js
 
 ## Contact
