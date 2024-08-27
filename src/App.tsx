@@ -11,6 +11,8 @@ import FamilyAndLife from "./component/pages/FamilyAndLife";
 import Header from "./component/organisms/Header";
 import Footer from "./component/organisms/Footer";
 import ArticleTest from "./component/pages/ArticleTest";
+import SignUpPage from "./component/pages/SignUpPage";
+import LoginPage from "./component/pages/LoginPage";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="/Raising" element={<Raising />} />
         <Route path="/FamilyAndLife" element={<FamilyAndLife />} />
         <Route path="/article" element={<ArticleTest />} />
+        <Route path="/SignUp" element={<SignUpPage />} />
+        <Route path="/Login" element={<LoginPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
