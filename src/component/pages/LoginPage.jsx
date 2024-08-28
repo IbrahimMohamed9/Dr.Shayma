@@ -1,5 +1,16 @@
+import InputField from "../atoms/InputField";
+
 const LoginPage = () => {
-  return <div>Login</div>;
+  return (
+    <InputField
+      type={"email"}
+      className={""}
+      register={""}
+      required={""}
+      label={""}
+      pattern={""}
+    />
+  );
 };
 
 export default LoginPage;

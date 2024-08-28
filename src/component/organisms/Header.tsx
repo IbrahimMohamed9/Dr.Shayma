@@ -1,32 +1,28 @@
-import logo from "./../../assets/images/logo.webp";
-import { Link } from "react-router-dom";
-import { LOGO_DESCRIPTION } from "./../../assets/utils/Constants";
 import HeaderWordList from "./../atoms/HeaderWordList";
-import Button from "./../atoms/Button";
+import HeaderButtons from "../molecules/HeaderButtons";
+import HeaderLogo from "../atoms/HeaderLogo";
 
 const Header = () => {
   const buttomsClasses = "mr-2 translate-center-y ";
+  const buttons = [
+    {
+      navTo: "/Login",
+      className: `bg-main-green text-white ${buttomsClasses}`,
+      content: "تسجيل دخول",
+    },
+    {
+      navTo: "/SignUp",
+      className: `bg-white text-black ${buttomsClasses}`,
+      content: "تسجيل حساب",
+    },
+  ];
+
   return (
     <header className="bg-black sticky top-0 z-50 w-full h-20">
       <div className="container flex justify-between">
-        <Link to="/home">
-          <img
-            src={logo}
-            alt={LOGO_DESCRIPTION}
-            className="w-32 translate-center-y"
-          />
-        </Link>
+        <HeaderLogo />
         <HeaderWordList />
-        <div>
-          <Button
-            content="تسجيل دخول"
-            className={"bg-main-green text-white " + buttomsClasses}
-          />
-          <Button
-            content="تسجيل حساب"
-            className={"bg-white text-black " + buttomsClasses}
-          />
-        </div>
+        <HeaderButtons buttons={buttons} />
       </div>
     </header>
   );
