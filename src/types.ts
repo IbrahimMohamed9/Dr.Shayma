@@ -17,8 +17,7 @@ export type InputFieldType = {
   className: string;
   // TODO: change the type
   register: UseFormRegister<any>;
-  required: boolean;
+  required: string;
   label: Path<any>;
   pattern: RegExp;
 };
-

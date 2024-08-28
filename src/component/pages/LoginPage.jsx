@@ -1,16 +1,7 @@
-import InputField from "../atoms/InputField";
+import LoginFrom from "../organisms/LoginFrom";
 
 const LoginPage = () => {
-  return (
-    <InputField
-      type={"email"}
-      className={""}
-      register={""}
-      required={""}
-      label={""}
-      pattern={""}
-    />
-  );
+  return <LoginFrom />;
 };
 
 export default LoginPage;
