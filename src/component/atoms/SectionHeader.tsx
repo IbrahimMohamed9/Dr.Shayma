@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-interface SectionHeaderProps {
+type SectionHeaderProps = {
   className?: string;
   content: string;
 }

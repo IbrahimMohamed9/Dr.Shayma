@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import utils from "../../assets/utils/utils";
 import { Categories } from "../../assets/utils/Constants";
 
-interface MainTopicImageProps {
+type MainTopicImageProps = {
   category: Categories;
 }
 

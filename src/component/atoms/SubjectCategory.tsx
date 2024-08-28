@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-interface subjectCategoryProps {
+type subjectCategoryProps = {
   color: string;
   category: string;
 }

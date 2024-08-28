@@ -6,7 +6,7 @@ import FormattedArticle from "../atoms/FormatArticles";
 import ArticleCommentSection from "../organisms/ArticleCommentSection";
 import { Categories } from "../../assets/utils/Constants";
 
-interface ArticleTemplateProps {
+type ArticleTemplateProps = {
   category: Categories;
   subcategory: string;
   imgSrc: string;

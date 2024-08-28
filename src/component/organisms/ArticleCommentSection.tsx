@@ -3,7 +3,7 @@ import CommentInput from "../atoms/CommentInput";
 import ArticleComments from "../molecules/ArticleComments";
 import { CommentType } from "../../types";
 
-interface ArticleCommentSectionProps {
+type ArticleCommentSectionProps = {
   comments: CommentType[];
 }
 

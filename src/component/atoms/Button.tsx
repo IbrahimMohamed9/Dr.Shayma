@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-interface ButtonProps {
+type ButtonProps = {
   fontSize?: string;
   className: string;
   content: string;
-}
+};
 
 const Button: FC<ButtonProps> = ({ fontSize, className, content }) => {
   const text = fontSize !== undefined ? fontSize : " text-xs ";

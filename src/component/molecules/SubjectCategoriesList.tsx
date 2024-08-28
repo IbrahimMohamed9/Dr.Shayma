@@ -1,7 +1,7 @@
 import { FC } from "react";
 import SubjectCategory from "../atoms/SubjectCategory";
 
-interface SubjectCategoriesListProps {
+type SubjectCategoriesListProps = {
   categories: string[];
   color: string;
 }

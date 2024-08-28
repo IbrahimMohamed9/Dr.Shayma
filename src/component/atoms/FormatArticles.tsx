@@ -1,8 +1,8 @@
 import { FC } from "react";
 
-interface FormattedArticleProps {
+type FormattedArticleProps = {
   content: string[];
-}
+};
 
 const FormattedArticle: FC<FormattedArticleProps> = ({ content }) => {
   return (

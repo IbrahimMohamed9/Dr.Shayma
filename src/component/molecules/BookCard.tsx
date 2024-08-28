@@ -1,10 +1,10 @@
 import { FC } from "react";
 import BookCardText from "../atoms/BookCardText";
 
-interface BookCardProps {
+type BookCardProps = {
   imgSrc: string;
   title: string;
-}
+};
 
 const BookCard: FC<BookCardProps> = ({ imgSrc, title }) => {
   return (

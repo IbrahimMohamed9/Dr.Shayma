@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-interface ArticleCommentProps {
+type ArticleCommentProps = {
   imgSrc: string;
   name: string;
   comment: string;
-}
+};
 
 const ArticleComment: FC<ArticleCommentProps> = ({ imgSrc, name, comment }) => {
   return (

@@ -2,7 +2,7 @@ import { FC } from "react";
 import SectionHeader from "../atoms/SectionHeader";
 import BookCard from "./../molecules/BookCard";
 
-interface Book {
+type Book = {
   title: string;
   imgSrc: string;
 }

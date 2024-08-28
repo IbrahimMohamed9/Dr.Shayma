@@ -1,9 +1,9 @@
 import { FC } from "react";
 
-interface SubjectTemplateImageProps {
+type SubjectTemplateImageProps = {
   title: string;
   imgSrc: string;
-}
+};
 
 const SubjectTemplateImage: FC<SubjectTemplateImageProps> = ({
   title,

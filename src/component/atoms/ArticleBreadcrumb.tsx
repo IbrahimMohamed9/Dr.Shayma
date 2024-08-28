@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import utils from "../../assets/utils/utils";
 import { Categories } from "../../assets/utils/Constants";
 
-interface ArticleBreadcrumbProps {
+type ArticleBreadcrumbProps = {
   category: Categories;
   subcategory: string;
-}
+};
 
 const ArticleBreadcrumb: FC<ArticleBreadcrumbProps> = ({
   category,

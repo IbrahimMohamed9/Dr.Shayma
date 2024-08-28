@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-interface SubjectTemplateArticleCardImageProps {
+type SubjectTemplateArticleCardImageProps = {
   imgSrc: string;
   title: string;
   index: number;

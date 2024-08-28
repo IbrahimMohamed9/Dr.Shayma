@@ -3,7 +3,7 @@ import SubjectTemplateArticleCardImage from "../atoms/SubjectTemplateArticleCard
 import SubjectTemplateArticleCardText from "../atoms/SubjectTemplateArticleCardText";
 import { ArticleType } from "../../types";
 
-interface SubjectTemplateArticleCardProps {
+type SubjectTemplateArticleCardProps = {
   index: number;
   article: ArticleType;
   color: string;

@@ -1,9 +1,9 @@
 import { FC } from "react";
 import Button from "./Button";
 
-interface BookCardTextProps {
+type BookCardTextProps = {
   title: string;
-}
+};
 
 const BookCardText: FC<BookCardTextProps> = ({ title }) => {
   return (

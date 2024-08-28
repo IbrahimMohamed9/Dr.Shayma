@@ -2,7 +2,7 @@ import { FC } from "react";
 import SubjectTemplateArticleCard from "../molecules/SubjectTemplateArticleCard";
 import { ArticleType } from "../../types";
 
-interface SubjectTemplateArticleCardsProps {
+type SubjectTemplateArticleCardsProps = {
   articles: ArticleType[];
   color: string;
 }

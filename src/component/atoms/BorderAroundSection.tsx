@@ -1,12 +1,12 @@
 import { FC, ReactNode } from "react";
 
-interface BorderAroundSectionProps {
+type BorderAroundSectionProps = {
   bgColor?: string;
   flex: boolean;
   rounded?: string;
   children: ReactNode;
   borderColor?: string;
-}
+};
 
 const BorderAroundSection: FC<BorderAroundSectionProps> = ({
   bgColor,

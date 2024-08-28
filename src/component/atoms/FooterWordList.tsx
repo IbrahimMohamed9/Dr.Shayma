@@ -1,13 +1,13 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
-interface FooterWordListProps {
+type FooterWordListProps = {
   content: contentType[];
-}
-interface contentType {
+};
+type contentType = {
   content: string;
   navTo: string;
-}
+};
 
 const FooterWordList: FC<FooterWordListProps> = ({ content }) => {
   return (

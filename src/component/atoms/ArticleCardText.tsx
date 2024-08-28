@@ -16,12 +16,12 @@ function getCardCategoryColor(category: Categories) {
   }
 }
 
-interface ArticleCardTextProps {
+type ArticleCardTextProps = {
   category: Categories;
   title: string;
   description: string;
   date: string;
-}
+};
 
 const ArticleCardText: FC<ArticleCardTextProps> = ({
   category,

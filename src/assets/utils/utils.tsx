@@ -14,13 +14,13 @@ import doctrineBigImage from "../../assets/images/التربية العقائد�
 import raisingBigImage from "../../assets/images/التربية مقال.png";
 import healthBigImage from "../../assets/images/الصحة مقال.png";
 
-interface CategoryDetails {
+type CategoryDetails = {
   category: Categories;
   color: string;
   smallImg: any;
   bigImg: any;
   navTo: string;
-}
+};
 
 const utils = {
   categoryDetails: (category: Categories): CategoryDetails => {

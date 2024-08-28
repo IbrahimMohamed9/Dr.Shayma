@@ -2,7 +2,7 @@ import { FC } from "react";
 import ArticleComment from "../atoms/ArticleComment";
 import { CommentType } from "../../types";
 
-interface ArticleCommentsProps {
+type ArticleCommentsProps = {
   comments: CommentType[];
 }
 

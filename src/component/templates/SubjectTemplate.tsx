@@ -7,12 +7,12 @@ import SubjectTemplateArticleCards from "../organisms/SubjectTemplateArticleCard
 import { ArticleType } from "../../types";
 import { Categories } from "../../assets/utils/Constants";
 
-interface SubjectTemplateProps {
+type SubjectTemplateProps = {
   title: string;
   categories: string[];
   category: Categories;
   articles: ArticleType[];
-}
+};
 
 const SubjectTemplate: FC<SubjectTemplateProps> = ({
   title,

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Button from "./Button";
 
-interface SubjectTemplateArticleCardTextProps {
+type SubjectTemplateArticleCardTextProps = {
   description: string;
   title: string;
   color: string;
