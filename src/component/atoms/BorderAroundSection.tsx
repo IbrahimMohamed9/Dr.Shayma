@@ -1,10 +1,10 @@
 import { FC, ReactNode } from "react";
 
 type BorderAroundSectionProps = {
-  bgColor?: string;
   flex: boolean;
-  rounded?: string;
   children: ReactNode;
+  bgColor?: string;
+  rounded?: string;
   borderColor?: string;
 };
 
@@ -19,7 +19,7 @@ const BorderAroundSection: FC<BorderAroundSectionProps> = ({
     <div className={`min-h-fit p-1 sm:p-5 w-full ${bgColor ?? ""}`}>
       <div
         className={`container border-5 h-full py-2 md:py-5 
-        border-${borderColor ?? "main-dark-blue"} 
+        border-${borderColor ?? "royal-blue"} 
         ${flex ? "flex flex-col-reverse md:flex-row" : ""} 
         ${rounded ?? ""}`}
       >
