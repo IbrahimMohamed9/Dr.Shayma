@@ -5,7 +5,11 @@ import Button from "./../atoms/Button";
 
 const FirstAboutUsSection = () => {
   return (
-    <BorderAroundSection bgColor="bg-main-blue bg-opacity-30 py-4" flex={true}>
+    <BorderAroundSection
+      bgColor="bg-main-blue bg-opacity-30 py-4"
+      className="container"
+      flex={true}
+    >
       <div className="md:w-2/3 px-2 min-h-fit text-2xl md:text-4xl md:flex md:flex-col md:justify-center max-w-xl">
         <SectionHeader content="اعرف عنا" className="text-center" />
         <p className="md:block-fit text-2xl text-center">
@@ -19,8 +23,7 @@ const FirstAboutUsSection = () => {
         </p>
         <Button
           content="القائمين علي العمل"
-          className="bg-main-green text-white w-fit mt-4 mx-auto block"
-          fontSize="text-xl"
+          className="bg-main-green text-white text-xl w-fit mt-4 mx-auto block"
         />
       </div>
       <div className="max-w-360 mx-auto">

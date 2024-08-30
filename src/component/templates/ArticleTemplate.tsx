@@ -46,8 +46,9 @@ const ArticleTemplate: FC<ArticleTemplateProps> = ({
 
   return (
     <BorderAroundSection
-      rounded="rounded-[12px]"
-      borderColor={utils.categoryDetails(category).color}
+      className={`rounded-[12px] container border-color-${
+        utils.categoryDetails(category).color
+      }`}
       flex={false}
     >
       <ArticleBreadcrumb category={category} subcategory={subcategory} />

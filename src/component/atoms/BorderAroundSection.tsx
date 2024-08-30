@@ -6,22 +6,20 @@ type BorderAroundSectionProps = {
   bgColor?: string;
   rounded?: string;
   borderColor?: string;
+  className?: string;
 };
 
 const BorderAroundSection: FC<BorderAroundSectionProps> = ({
-  bgColor,
   flex,
-  rounded,
+  bgColor,
   children,
-  borderColor,
+  className,
 }) => {
   return (
     <div className={`min-h-fit p-1 sm:p-5 w-full ${bgColor ?? ""}`}>
       <div
-        className={`container border-5 h-full py-2 md:py-5 
-        border-${borderColor ?? "royal-blue"} 
-        ${flex ? "flex flex-col-reverse md:flex-row" : ""} 
-        ${rounded ?? ""}`}
+        className={`border-5 h-full py-2 md:py-5 border-royal-blue ${className}
+        ${flex ? "flex flex-col-reverse md:flex-row" : ""}`}
       >
         {children}
       </div>

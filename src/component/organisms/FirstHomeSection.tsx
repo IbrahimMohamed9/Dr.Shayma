@@ -8,6 +8,7 @@ const FirstHomeSection = () => {
   return (
     <BorderAroundSection
       bgColor="bg-gradient-to-l from-white via-cyan to-cyan"
+      className="container"
       flex={true}
     >
       <div className="md:w-2/3 px-2 min-h-fit text-2xl md:text-4xl md:flex md:flex-col md:justify-center">
@@ -21,8 +22,7 @@ const FirstHomeSection = () => {
         </p>
         <Button
           content="المواضيع"
-          className="bg-main-green text-white w-fit mt-4"
-          fontSize="text-xl"
+          className="bg-main-green text-white text-xl w-fit mt-4"
         />
       </div>
       <div className="flex gap-7 justify-center mb-5">
