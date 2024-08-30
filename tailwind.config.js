@@ -10,6 +10,11 @@ module.exports = {
     "hover:bg-main-orange",
     "hover:bg-main-green",
     "hover:bg-main-red",
+    "bg-main-blue",
+    "bg-main-orange",
+    "bg-main-green",
+    "bg-main-red",
+    "bg-black",
   ],
   theme: {
     extend: {
@@ -55,6 +60,10 @@ module.exports = {
       lineHeight: {
         "extra-loose": "2.5",
         20: "5rem",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        times: ['"Times New Roman"', "serif"],
       },
     },
   },

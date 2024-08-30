@@ -1,20 +1,19 @@
 import { FC } from "react";
 
+type ButtonType = "submit" | "reset" | "button";
+
 type ButtonProps = {
-  fontSize?: string;
   className: string;
   content: string;
+  type?: ButtonType;
 };
 
-const Button: FC<ButtonProps> = ({ fontSize, className, content }) => {
-  const text = fontSize !== undefined ? fontSize : " text-xs ";
+const Button: FC<ButtonProps> = ({ className, content, type = "button" }) => {
   const classNameConcatenation =
     "px-3.5 py-2 rounded-md font-semibold transition-all duration-300 border-0 hover:rounded-[22px] " +
-    className +
-    " " +
-    text;
+    className;
   return (
-    <button className={`cursor-pointer ${classNameConcatenation}`}>
+    <button className={`cursor-pointer ${classNameConcatenation}`} type={type}>
       {content}
     </button>
   );

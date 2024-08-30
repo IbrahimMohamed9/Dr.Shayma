@@ -17,7 +17,7 @@ const SubjectTemplateArticleCardText: FC<
         <h2 className="font-bold text-base md:text-lg">{title}</h2>
         <p className="my-4 line-clamp-4 text-sm md:text-base">{description}</p>
         <Button
-          className={"block mx-auto mt-4 text-white bg-" + color}
+          className={"block mx-auto mt-4 text-white text-xs bg-" + color}
           content="اقرأ المزيد"
         />
       </div>

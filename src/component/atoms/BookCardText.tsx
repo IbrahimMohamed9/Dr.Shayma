@@ -11,7 +11,7 @@ const BookCardText: FC<BookCardTextProps> = ({ title }) => {
       <h2 className="py-4 font-bold text-center">{title}</h2>
       <Button
         content="أقرأ"
-        className="bg-main-green mx-auto block text-white"
+        className="bg-main-green mx-auto block text-white text-xs"
       />
     </div>
   );
