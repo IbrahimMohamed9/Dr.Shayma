@@ -1,4 +1,5 @@
-import { UseFormRegister, Path } from "react-hook-form";
+import { ElementType } from "react";
+import { Path } from "react-hook-form";
 
 export type CommentType = {
   imgSrc: string;
@@ -12,12 +13,18 @@ export type ArticleType = {
   imgSrc: string;
 };
 
+export type PatternType = {
+  message: string;
+  value: RegExp;
+};
+
 export type InputFieldType = {
-  type: string;
-  className: string;
-  // TODO: change the type
-  register: UseFormRegister<any>;
+  fieldName: Path<any>;
   required: string;
-  label: Path<any>;
-  pattern: RegExp;
+  type?: string;
+  className?: string;
+  pattern?: PatternType;
+  PrefixIcon?: ElementType;
+  OnClickIcon?: () => void;
+  ElementBelowField?: ElementType;
 };
