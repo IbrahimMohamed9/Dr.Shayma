@@ -1,10 +1,10 @@
 import PasswordIcon from "../atoms/PasswordIcon";
 import FormTemplate from "../templates/FormTemplate";
 import { useState } from "react";
-import SocialButton from "./../atoms/SocialButton";
+import SocialButton from "../atoms/SocialButton";
 import { ScreenType } from "../atoms/TitleUnderSumbitBtnForm";
 
-const SignUpPage = () => {
+const SignUp = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -61,4 +61,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default SignUp;

@@ -5,7 +5,7 @@ import { useState } from "react";
 import SocialButton from "../atoms/SocialButton";
 import { ScreenType } from "../atoms/TitleUnderSumbitBtnForm";
 
-const LoginPage = () => {
+const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -50,4 +50,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;

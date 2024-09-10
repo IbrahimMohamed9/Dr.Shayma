@@ -11,8 +11,9 @@ import FamilyAndLife from "./component/pages/FamilyAndLife";
 import Header from "./component/organisms/Header";
 import Footer from "./component/organisms/Footer";
 import ArticleTest from "./component/pages/ArticleTest";
-import SignUpPage from "./component/pages/SignUpPage";
-import LoginPage from "./component/pages/LoginPage";
+import Login from "./component/pages/Login";
+import SignUp from "./component/pages/SignUp";
+import HonorList from "./component/pages/HonorList";
 
 function App() {
   return (
@@ -27,9 +28,10 @@ function App() {
         <Route path="/Health" element={<Health />} />
         <Route path="/Raising" element={<Raising />} />
         <Route path="/FamilyAndLife" element={<FamilyAndLife />} />
+        <Route path="/honorList" element={<HonorList />} />
         <Route path="/article" element={<ArticleTest />} />
-        <Route path="/SignUp" element={<SignUpPage />} />
-        <Route path="/Login" element={<LoginPage />} />
+        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
       <Footer />
     </BrowserRouter>
