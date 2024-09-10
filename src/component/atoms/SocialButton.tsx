@@ -22,7 +22,7 @@ const SocialButton: FC<SocialButtonProps> = ({ platformsText }) => {
   };
 
   return (
-    <>
+    <div className="mt-2 md:mt-3 w-full">
       {Object.entries(platforms).map(([key, { Icon }]) => (
         <button
           key={key}
@@ -38,7 +38,7 @@ const SocialButton: FC<SocialButtonProps> = ({ platformsText }) => {
           </span>
         </button>
       ))}
-    </>
+    </div>
   );
 };
 

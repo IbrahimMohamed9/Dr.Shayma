@@ -1,27 +1,30 @@
-import { ElementType, FC } from "react";
+import { FC, ReactNode } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { InputFieldType } from "../../types";
 import Button from "../atoms/Button";
 import SectionHeader from "../atoms/SectionHeader";
 import BorderAroundSection from "../atoms/BorderAroundSection";
 import InputFields from "../molecules/InputFields";
+import TitleUnderSumbitBtnForm, {
+  ScreenType,
+} from "../atoms/TitleUnderSumbitBtnForm";
 
 type FormTemplateProps = {
   inputFields: InputFieldType[];
   title: string;
   submitBtnClassName: string;
   submitBtnTitle: string;
-  AdditionButtons: ElementType;
-  children: ElementType;
+  children: ReactNode;
+  screenType?: ScreenType;
 };
 
 const FormTemplate: FC<FormTemplateProps> = ({
   inputFields,
   title,
-  AdditionButtons,
   submitBtnClassName,
   submitBtnTitle,
   children,
+  screenType,
 }) => {
   const {
     register,
@@ -49,11 +52,12 @@ const FormTemplate: FC<FormTemplateProps> = ({
           />
           <>{children}</>
           <Button
-            className={`bg-main-green mt-7 text-white ${submitBtnClassName}`}
+            className={`bg-main-green mt-4 md:mt-5 text-white ${submitBtnClassName}`}
             content={submitBtnTitle}
             type={"submit"}
           />
         </div>
+        {screenType && <TitleUnderSumbitBtnForm screenType={screenType} />}
       </BorderAroundSection>
     </form>
   );

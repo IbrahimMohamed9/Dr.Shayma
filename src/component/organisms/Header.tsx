@@ -13,7 +13,7 @@ const Header = () => {
     {
       navTo: "/SignUp",
       className: `bg-white text-black ${buttomsClasses}`,
-      content: "تسجيل حساب",
+      content: "إنشاء حساب",
     },
   ];
 

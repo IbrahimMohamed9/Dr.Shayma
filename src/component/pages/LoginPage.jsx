@@ -3,6 +3,7 @@ import FormTemplate from "../templates/FormTemplate";
 import ForgetPasswordLoginScreen from "../atoms/ForgetPasswordLoginScreen";
 import { useState } from "react";
 import SocialButton from "../atoms/SocialButton";
+import { ScreenType } from "../atoms/TitleUnderSumbitBtnForm";
 
 const LoginPage = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -32,8 +33,8 @@ const LoginPage = () => {
   ];
 
   const platformsText = {
-    google: "إنشاء حساب مع جوجل",
-    facebook: "إنشاء حساب مع فيسبوك",
+    google: "تسجيل دخول مع جوجل",
+    facebook: "تسجيل دخول فيسبوك",
   };
 
   return (
@@ -42,6 +43,7 @@ const LoginPage = () => {
       title={"تسجيل دخول"}
       submitBtnClassName="w-full text-xl"
       submitBtnTitle="تسجيل دخول"
+      screenType={ScreenType.LOGIN}
     >
       <SocialButton platformsText={platformsText} />
     </FormTemplate>

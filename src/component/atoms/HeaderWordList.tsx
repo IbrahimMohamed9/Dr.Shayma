@@ -12,7 +12,7 @@ const HeaderWordList = () => {
     "hover:text-main-green text-white w-20 transition-colors duration-300 cursor-pointer ";
 
   return (
-    <ul className="flex gap-30 hidden">
+    <ul className="flex gap-30 ">
       {content.map((word, index) => (
         <li key={index} className={wordClasses}>
           <Link

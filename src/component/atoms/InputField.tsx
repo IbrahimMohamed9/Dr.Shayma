@@ -1,9 +1,11 @@
 import { FC } from "react";
 import { InputFieldType } from "../../types";
-import { UseFormRegister } from "react-hook-form";
+import { FieldErrors, UseFormRegister } from "react-hook-form";
+import ErrorMessage from "./ErrorMessage";
 
 type InputFieldProps = InputFieldType & {
   register: UseFormRegister<any>;
+  errors: FieldErrors<any>;
 };
 
 const InputField: FC<InputFieldProps> = ({
@@ -16,6 +18,9 @@ const InputField: FC<InputFieldProps> = ({
   PrefixIcon,
   OnClickIcon,
   ElementBelowField,
+  errors,
+  minLength,
+  maxLength,
 }) => {
   return (
     <>
@@ -32,14 +37,15 @@ const InputField: FC<InputFieldProps> = ({
             ${PrefixIcon ? "w-[calc(100%-2rem)]" : "w-full"}
             ${className ?? ""}`}
           {...register(fieldName, {
+            maxLength: maxLength,
+            minLength: minLength,
             required: required,
-            pattern: pattern
-              ? { value: pattern.value, message: pattern.message }
-              : undefined,
+            pattern: pattern,
           })}
         />
         {PrefixIcon && <PrefixIcon onClick={OnClickIcon} inputType={type} />}
       </div>
+      <ErrorMessage errors={errors} fieldName={fieldName} />
       {ElementBelowField && <ElementBelowField />}
     </>
   );

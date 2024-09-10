@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { InputFieldType } from "../../types";
-import ErrorMessage from "../atoms/ErrorMessage";
 import { FieldErrors, UseFormRegister } from "react-hook-form";
 import InputField from "../atoms/InputField";
 
@@ -33,8 +32,10 @@ const InputFields: FC<InputFieldsProps> = ({
             PrefixIcon={input.PrefixIcon}
             OnClickIcon={input.OnClickIcon}
             ElementBelowField={input.ElementBelowField}
+            maxLength={input.maxLength}
+            minLength={input.minLength}
+            errors={errors}
           />
-          <ErrorMessage errors={errors} fieldName={input.fieldName} />
         </div>
       ))}
     </>
