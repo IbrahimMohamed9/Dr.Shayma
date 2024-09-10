@@ -6,25 +6,21 @@ import { LOGO_DESCRIPTION } from "../../assets/utils/Constants";
 import FooterWordList from "./../atoms/FooterWordList";
 const Footer = () => {
   const whoWeAre = [
-    { navTo: "/whoWeAre", content: "من نحن؟" },
-    { navTo: "/thinkingEducation", content: "التربية بالتفكر" },
+    { navTo: "", content: "من نحن؟" },
+    { navTo: "/aboutUs", content: "اعرف عنا" },
+    { navTo: "/honorList", content: "لائحة الشرف" },
   ];
 
   const topics = [
-    { navTo: "/childDoctrine", content: "عقيدة طفلي" },
-    { navTo: "/thinkingEducation", content: "التربية بالتفكر" },
-    {
-      navTo: "/islamicEducationLibrary",
-      content: "مكتبة التربية الإسلامية",
-    },
-    {
-      navTo: "/sexualEducationInIslam",
-      content: "التربية الجنسية في الإسلام",
-    },
+    { navTo: "", content: "المواضيع" },
+    { navTo: "/DoctrinalEducation", content: "التربية العقائدية" },
+    { navTo: "/FamilyAndLife", content: "الاسرة و الحياة" },
+    { navTo: "/Raising", content: "التربية" },
+    { navTo: "/Health", content: "الصحة" },
   ];
 
   const mostPopularArticles = [
-    { navTo: "/childDoctrine", content: "عقيدة طفلي" },
+    { navTo: "", content: "اشهر المقالات" },
     { navTo: "/thinkingEducation", content: "التربية بالتفكر" },
     {
       navTo: "/islamicEducationLibrary",
