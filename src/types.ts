@@ -35,3 +35,11 @@ export type InputFieldType = {
   minLength?: LengthValidationType;
   maxLength?: LengthValidationType;
 };
+
+export type Volunteer = {
+  name: string;
+  title: string;
+  image: string;
+  whatsappNumber?: string;
+  mail?: string;
+};

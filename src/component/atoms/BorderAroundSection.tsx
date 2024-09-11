@@ -3,17 +3,15 @@ import { FC, ReactNode } from "react";
 type BorderAroundSectionProps = {
   flex: boolean;
   children: ReactNode;
-  bgColor?: string;
-  rounded?: string;
-  borderColor?: string;
   className?: string;
+  bgColor?: string;
 };
 
 const BorderAroundSection: FC<BorderAroundSectionProps> = ({
   flex,
-  bgColor,
   children,
   className,
+  bgColor,
 }) => {
   return (
     <div className={`min-h-fit p-1 sm:p-5 w-full ${bgColor ?? ""}`}>

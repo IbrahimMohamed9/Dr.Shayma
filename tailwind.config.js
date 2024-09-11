@@ -19,7 +19,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: "475px",
+        xs: "480px",
+        xxs: "400px",
       },
       borderRadius: {
         16: "16rem",

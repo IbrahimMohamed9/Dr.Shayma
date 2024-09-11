@@ -33,7 +33,7 @@ const Footer = () => {
   ];
 
   const commonSvgClasses =
-    " w-8  h-8 border-2 p-1 rounded-full transition-all duration-300";
+    "size-8 border-2 p-1 rounded-full transition-all duration-300";
 
   const socialMediaIcons = [
     {
