@@ -53,9 +53,10 @@ const FormTemplate: FC<FormTemplateProps> = ({
           <>{children}</>
           <Button
             className={`bg-main-green mt-4 md:mt-5 text-white ${submitBtnClassName}`}
-            content={submitBtnTitle}
             type={"submit"}
-          />
+          >
+            {submitBtnTitle}
+          </Button>
         </div>
         {screenType && <TitleUnderSumbitBtnForm screenType={screenType} />}
       </BorderAroundSection>

@@ -16,7 +16,7 @@ const VolunteerCard: FC<VolunteerCardProps> = ({ volunteer, color }) => {
       } rounded-3xl p-4 flex max-xs:flex-col items-center justify-center`}
     >
       <img
-        src={volunteer.image}
+        src={volunteer.imgSrc}
         alt={volunteer.name}
         className="rounded-full size-20 lg:size-32 sm:ml-4"
       />
@@ -24,7 +24,7 @@ const VolunteerCard: FC<VolunteerCardProps> = ({ volunteer, color }) => {
         name={volunteer.name}
         title={volunteer.title}
         whatsappNumber={volunteer.whatsappNumber}
-        mail={volunteer.mail}
+        email={volunteer.email}
       />
     </div>
   );

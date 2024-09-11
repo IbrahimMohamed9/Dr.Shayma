@@ -17,7 +17,7 @@ const HeaderButtons: FC<HeaderButtonsProps> = ({ buttons }) => {
     <div>
       {buttons.map((button, index) => (
         <Link to={button.navTo} key={index}>
-          <Button content={button.content} className={button.className} />
+          <Button className={button.className}>{button.content}</Button>
         </Link>
       ))}
     </div>

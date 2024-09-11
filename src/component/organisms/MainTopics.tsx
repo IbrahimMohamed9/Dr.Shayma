@@ -11,7 +11,7 @@ import MainTopicImage from "./../atoms/MainTopicImage";
 const MainTopics = () => {
   const topics = [DOCTRINAL_EDUCATION, FAMILY_AND_LIFE, HEALTH, RAISING];
   return (
-    <div className="mt-14">
+    <div className="mt-14" id="topics">
       <SectionHeader content={MAIN_TOPICS} />
       <div className="md:grid md:grid-cols-2 max-w-6xl mx-auto">
         {topics.map((topic, index) => (

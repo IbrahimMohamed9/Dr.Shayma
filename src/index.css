@@ -54,7 +54,7 @@ a {
     transform: translateX(50%);
     right: 50%;
     position: relative;
-}
+  }
   .block-fit {
     width: fit-content;
     block-size: fit-content;

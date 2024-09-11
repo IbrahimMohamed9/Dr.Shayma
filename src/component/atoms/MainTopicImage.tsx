@@ -16,9 +16,10 @@ const MainTopicImage: FC<MainTopicImageProps> = ({ category }) => {
       <img src={smallImg} alt={category} className="w-full" />
       <Link to={`/${navTo}`}>
         <Button
-          content="اقرء المزيد"
           className={`translate-center-l bg-${color} absolute -bottom-16 py-2/5 px-5 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:-translate-y-20 text-xl`}
-        />
+        >
+          اقرء المزيد
+        </Button>
       </Link>
     </div>
   );

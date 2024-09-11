@@ -14,6 +14,7 @@ import ArticleTest from "./component/pages/ArticleTest";
 import Login from "./component/pages/Login";
 import SignUp from "./component/pages/SignUp";
 import HonorList from "./component/pages/HonorList";
+import Profile from "./component/pages/Profile";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/article" element={<ArticleTest />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Profile" element={<Profile />} />
       </Routes>
       <Footer />
     </BrowserRouter>

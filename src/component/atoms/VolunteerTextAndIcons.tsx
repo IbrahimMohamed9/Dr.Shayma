@@ -2,19 +2,13 @@ import { FC } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { Volunteer } from "../../types";
 
-type VolunteerTextAndIconsProps = {
-  name: string;
-  title: string;
-  whatsappNumber?: string;
-  mail?: string;
-};
-
-const VolunteerTextAndIcons: FC<VolunteerTextAndIconsProps> = ({
+const VolunteerTextAndIcons: FC<Volunteer> = ({
   name,
   title,
   whatsappNumber,
-  mail,
+  email,
 }) => {
   return (
     <div className="text-center flex-1">
@@ -29,14 +23,12 @@ const VolunteerTextAndIcons: FC<VolunteerTextAndIconsProps> = ({
             <BsWhatsapp className="size-5" />
           </Link>
         )}
-        {mail && (
-          <Link
-            to={`mailto:${mail}`}
-            className="text-2xl hover:text-main-blue m-auto"
-          >
-            <AiOutlineMail className="size-6" />
-          </Link>
-        )}
+        <Link
+          to={`mailto:${email}`}
+          className="text-2xl hover:text-main-blue m-auto"
+        >
+          <AiOutlineMail className="size-6" />
+        </Link>
       </div>
     </div>
   );

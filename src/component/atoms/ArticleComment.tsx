@@ -1,8 +1,7 @@
 import { FC } from "react";
+import { PersonInfo } from "../../types";
 
-type ArticleCommentProps = {
-  imgSrc: string;
-  name: string;
+type ArticleCommentProps = PersonInfo & {
   comment: string;
 };
 

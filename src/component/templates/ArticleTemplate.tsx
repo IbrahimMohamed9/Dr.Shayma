@@ -5,6 +5,7 @@ import utils from "../../assets/utils/utils";
 import FormattedArticle from "../atoms/FormatArticles";
 import ArticleCommentSection from "../organisms/ArticleCommentSection";
 import { Categories } from "../../assets/utils/Constants";
+import { CommentType } from "../../types";
 
 type ArticleTemplateProps = {
   category: Categories;
@@ -13,7 +14,7 @@ type ArticleTemplateProps = {
   title: string;
   publishTime: string;
   content: string[];
-}
+};
 
 const ArticleTemplate: FC<ArticleTemplateProps> = ({
   category,
@@ -23,7 +24,7 @@ const ArticleTemplate: FC<ArticleTemplateProps> = ({
   publishTime,
   content,
 }) => {
-  const comments = [
+  const comments: CommentType[] = [
     {
       imgSrc: imgSrc,
       name: "سيف الله وائل",

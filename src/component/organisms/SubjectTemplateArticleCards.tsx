@@ -5,7 +5,7 @@ import { ArticleType } from "../../types";
 type SubjectTemplateArticleCardsProps = {
   articles: ArticleType[];
   color: string;
-}
+};
 
 const SubjectTemplateArticleCards: FC<SubjectTemplateArticleCardsProps> = ({
   articles,

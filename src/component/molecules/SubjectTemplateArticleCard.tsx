@@ -7,7 +7,7 @@ type SubjectTemplateArticleCardProps = {
   index: number;
   article: ArticleType;
   color: string;
-}
+};
 
 const SubjectTemplateArticleCard: FC<SubjectTemplateArticleCardProps> = ({
   index,
@@ -29,6 +29,7 @@ const SubjectTemplateArticleCard: FC<SubjectTemplateArticleCardProps> = ({
         title={article.title}
         color={color}
         description={article.description}
+        link={article.link}
       />
     </div>
   );

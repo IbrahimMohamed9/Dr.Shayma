@@ -1,9 +1,13 @@
 import { ElementType } from "react";
-import { Path, ValidationRule, ValidationValueMessage } from "react-hook-form";
+import { Path } from "react-hook-form";
 
-export type CommentType = {
-  imgSrc: string;
+export type PersonInfo = {
   name: string;
+  imgSrc?: string;
+  email?: string;
+};
+
+export type CommentType = PersonInfo & {
   comment: string;
 };
 
@@ -11,6 +15,7 @@ export type ArticleType = {
   title: string;
   description: string;
   imgSrc: string;
+  link: string;
 };
 
 export type PatternValidationType = {
@@ -36,10 +41,11 @@ export type InputFieldType = {
   maxLength?: LengthValidationType;
 };
 
-export type Volunteer = {
-  name: string;
+export type Volunteer = PersonInfo & {
   title: string;
-  image: string;
   whatsappNumber?: string;
-  mail?: string;
+};
+
+export type Activity = PersonInfo & {
+  description: string;
 };

@@ -2,6 +2,7 @@ import aqidtna from "./../../assets/images/aqidtna.png";
 import BorderAroundSection from "./../atoms/BorderAroundSection";
 import SectionHeader from "./../atoms/SectionHeader";
 import Button from "./../atoms/Button";
+import { Link } from "react-router-dom";
 
 const FirstAboutUsSection = () => {
   return (
@@ -21,10 +22,9 @@ const FirstAboutUsSection = () => {
           <br /> وخلال رحلتي مع أبنائي وأبناء المسلمين وجدت الحاجة ضرورية لتعليم
           الأمهات عن التربية المستمدة من الوحيين، الخالية من التغريب.
         </p>
-        <Button
-          content="القائمين علي العمل"
-          className="bg-main-green text-white text-xl w-fit mt-4 mx-auto block"
-        />
+        <Button className="bg-main-green text-white text-xl w-fit mt-4 mx-auto block">
+          <Link to="/honorList">القائمين علي العمل</Link>
+        </Button>
       </div>
       <div className="max-w-360 mx-auto">
         <img src={aqidtna} alt="عقيدتنا" className="mb-8 max-w-full" />
