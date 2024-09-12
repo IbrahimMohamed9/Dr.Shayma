@@ -10,13 +10,15 @@ const SubjectCategoriesList: FC<SubjectCategoriesListProps> = ({
   categories,
   color,
 }) => {
+  const categoryElementsList = categories.map((category, index) => (
+    <li key={index}>
+      <SubjectCategory category={category} color={color} />
+    </li>
+  ));
+
   return (
     <ul className="flex flex-wrap gap-2 text-nowrap -mt-3">
-      {categories.map((category, index) => (
-        <li key={index}>
-          <SubjectCategory category={category} color={color} />
-        </li>
-      ))}
+      {categoryElementsList}
     </ul>
   );
 };

@@ -20,10 +20,7 @@ const ArticleBreadcrumb: FC<ArticleBreadcrumbProps> = ({
         <span className="mx-2">{">>"}</span>
         <Link to={"/" + navTo}>{category}</Link>
         <span className="mx-2">{">>"}</span>
-        <Link to="#">
-          {/* TODO:compelete navigation */}
-          {subcategory}
-        </Link>
+        <Link to="#">{subcategory}</Link>
       </nav>
     </div>
   );

@@ -7,14 +7,17 @@ type Book = {
   imgSrc: string;
 }
 
+
 const BooksSection: FC<{ books: Book[] }> = ({ books }) => {
+  const bookElementsList = books.map((book, index) => (
+    <BookCard title={book.title} imgSrc={book.imgSrc} key={index} />
+  ));
+
   return (
     <div className="m-5">
       <SectionHeader content="الكتب المتاحة" className="text-center" />
-      <div className="flex gap-x-12 overflow-auto">
-        {books.map((book, index) => (
-          <BookCard title={book.title} imgSrc={book.imgSrc} key={index} />
-        ))}
+      <div className="container flex gap-12 flex-wrap justify-center max-w-full">
+        {bookElementsList}
       </div>
     </div>
   );

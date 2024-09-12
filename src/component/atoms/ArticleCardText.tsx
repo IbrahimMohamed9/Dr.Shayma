@@ -31,10 +31,13 @@ const ArticleCardText: FC<ArticleCardTextProps> = ({
 }) => {
   const categoryColor = getCardCategoryColor(category);
   return (
-    <div className="flex flex-col gap-y-10 p-3 w-360">
+    <div className="flex flex-col gap-y-10 p-3  w-fit">
       <h3 className={"text-" + categoryColor + " text-sm"}>{category}</h3>
       <h2 className="font-bold">{title}</h2>
-      <p>{description}</p>
+      <p className="line-clamp-3">
+        {description} {description}
+        {description}
+      </p>
       <time className="text-gray-700">{date}</time>
     </div>
   );

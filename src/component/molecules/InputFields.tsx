@@ -14,32 +14,17 @@ const InputFields: FC<InputFieldsProps> = ({
   errors,
   register,
 }) => {
-  return (
-    <>
-      {inputFields.map((input, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-start font-inter font-semibold text-bold mb-2 w-full"
-        >
-          <InputField
-            key={index}
-            type={input.type}
-            className={input.className}
-            register={register}
-            required={input.required}
-            fieldName={input.fieldName}
-            pattern={input.pattern}
-            PrefixIcon={input.PrefixIcon}
-            OnClickIcon={input.OnClickIcon}
-            ElementBelowField={input.ElementBelowField}
-            maxLength={input.maxLength}
-            minLength={input.minLength}
-            errors={errors}
-          />
-        </div>
-      ))}
-    </>
-  );
+
+  const inputFieldsElements = inputFields.map((input, index) => (
+    <div
+      key={index}
+      className="flex flex-col items-start font-inter font-semibold text-bold mb-2 w-full"
+    >
+      <InputField errors={errors} register={register} inputField={input} />
+    </div>
+  ));
+
+  return <>{inputFieldsElements}</>;
 };
 
 export default InputFields;

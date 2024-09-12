@@ -54,18 +54,20 @@ const ArticleCards = () => {
     },
   ];
 
+  const articles = cardsList.map((card, index) => (
+    <ArticleCard
+      key={index}
+      category={card.category}
+      title={card.title}
+      description={card.description}
+      date={card.date}
+      imgSrc={card.imgSrc}
+    />
+  ));
+
   return (
-    <div className="flex gap-5 overflow-x-auto my-6 px-10 overflow-visible">
-      {cardsList.map((card, index) => (
-        <ArticleCard
-          key={index}
-          category={card.category}
-          title={card.title}
-          description={card.description}
-          date={card.date}
-          imgSrc={card.imgSrc}
-        />
-      ))}
+    <div className="flex gap-5 overflow-x-auto  overflow-visible">
+      {articles}
     </div>
   );
 };

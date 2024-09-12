@@ -10,10 +10,12 @@ type ButtonProps = {
 
 const Button: FC<ButtonProps> = ({ className, type = "button", children }) => {
   const classNameConcatenation =
-    "px-3.5 py-2 rounded-md font-semibold transition-all duration-300 border-0 hover:rounded-[22px] " +
-    className;
+    "px-3.5 py-2 rounded-md font-semibold transition-all duration-300 border-0 hover:rounded-[22px] ";
   return (
-    <button className={`cursor-pointer ${classNameConcatenation}`} type={type}>
+    <button
+      className={`cursor-pointer ${classNameConcatenation} ${className}`}
+      type={type}
+    >
       {children}
     </button>
   );

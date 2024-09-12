@@ -16,7 +16,7 @@ const MainTopicImage: FC<MainTopicImageProps> = ({ category }) => {
       <img src={smallImg} alt={category} className="w-full" />
       <Link to={`/${navTo}`}>
         <Button
-          className={`translate-center-l bg-${color} absolute -bottom-16 py-2/5 px-5 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:-translate-y-20 text-xl`}
+          className={`translate-center-r translate-x-24 max-xs:px-2 max-xs:py-1 xs:text-lg xs:translate-x-36 text-white bg-${color} absolute -bottom-16 opacity-0 group-hover:opacity-100 group-hover:-translate-y-20`}
         >
           اقرء المزيد
         </Button>

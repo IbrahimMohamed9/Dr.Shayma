@@ -45,14 +45,12 @@ const Footer = () => {
       icon: BsWhatsapp,
       styles:
         "border-whatsapp text-whatsapp hover:bg-whatsapp hover:text-white",
-      // TODO: fix the links
       link: "https://www.facebook.com/profile.php?id=100002421841995",
     },
     {
       icon: FaTelegramPlane,
       styles:
         "border-telegram text-telegram hover:bg-telegram hover:text-white",
-      // TODO: fix the links
       link: "https://www.facebook.com/profile.php?id=100002421841995",
     },
     {

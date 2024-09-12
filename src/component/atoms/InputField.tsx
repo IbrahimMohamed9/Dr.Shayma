@@ -3,25 +3,26 @@ import { InputFieldType } from "../../types";
 import { FieldErrors, UseFormRegister } from "react-hook-form";
 import ErrorMessage from "./ErrorMessage";
 
-type InputFieldProps = InputFieldType & {
+type InputFieldProps = {
+  inputField: InputFieldType;
   register: UseFormRegister<any>;
   errors: FieldErrors<any>;
 };
 
-const InputField: FC<InputFieldProps> = ({
-  type,
-  className,
-  register,
-  required,
-  fieldName,
-  pattern,
-  PrefixIcon,
-  OnClickIcon,
-  ElementBelowField,
-  errors,
-  minLength,
-  maxLength,
-}) => {
+const InputField: FC<InputFieldProps> = ({ register, errors, inputField }) => {
+  const {
+    type,
+    className,
+    required,
+    fieldName,
+    pattern,
+    PrefixIcon,
+    OnClickIcon,
+    ElementBelowField,
+    minLength,
+    maxLength,
+  } = inputField;
+
   return (
     <>
       <label htmlFor={fieldName}>{fieldName}</label>
