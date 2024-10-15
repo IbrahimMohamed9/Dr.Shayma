@@ -21,9 +21,9 @@ const SubjectTemplateArticleCard: FC<SubjectTemplateArticleCardProps> = ({
       }`}
     >
       <SubjectTemplateArticleCardImage
+        index={index}
         imgSrc={article.imgSrc}
         title={article.title}
-        index={index}
       />
       <SubjectTemplateArticleCardText
         title={article.title}

@@ -4,7 +4,7 @@ import {
   FAMILY_AND_LIFE,
   HEALTH,
   RAISING,
-} from "../../assets/utils/Constants";
+} from "./Constants";
 import familyAndLifeSmallImage from "../../assets/images/الاسرة والحياة رئيسي.png";
 import doctrineSmallImage from "../../assets/images/التربية العقائدية رئيسي.png";
 import raisingSmallImage from "../../assets/images/التربية رئيسي.png";
@@ -17,6 +17,7 @@ import healthBigImage from "../../assets/images/الصحة مقال.png";
 type CategoryDetails = {
   category: Categories;
   color: string;
+  hexColor: string;
   smallImg: any;
   bigImg: any;
   navTo: string;
@@ -29,6 +30,7 @@ const utils = {
         return {
           category: category,
           color: "main-orange",
+          hexColor: "#ed7609",
           smallImg: raisingSmallImage,
           bigImg: raisingBigImage,
           navTo: "Raising",
@@ -37,6 +39,7 @@ const utils = {
         return {
           category: category,
           color: "main-blue",
+          hexColor: "#1877f2",
           smallImg: doctrineSmallImage,
           bigImg: doctrineBigImage,
           navTo: "DoctrinalEducation",
@@ -45,6 +48,8 @@ const utils = {
         return {
           category: category,
           color: "main-green",
+          hexColor: "#3e7422",
+
           smallImg: healthSmallImage,
           bigImg: healthBigImage,
           navTo: "Health",
@@ -53,6 +58,7 @@ const utils = {
         return {
           category: category,
           color: "main-red",
+          hexColor: "#8b002a",
           smallImg: familyAndLifeSmallImage,
           bigImg: familyAndLifeBigImage,
           navTo: "FamilyAndLife",

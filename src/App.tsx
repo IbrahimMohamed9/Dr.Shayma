@@ -25,10 +25,13 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/DoctrinalEducation" element={<DoctrinalEducation />} />
-        <Route path="/Health" element={<Health />} />
-        <Route path="/Raising" element={<Raising />} />
-        <Route path="/FamilyAndLife" element={<FamilyAndLife />} />
+        <Route
+          path="/DoctrinalEducation/:category?"
+          element={<DoctrinalEducation />}
+        />
+        <Route path="/Health/:category?" element={<Health />} />
+        <Route path="/Raising/:category?" element={<Raising />} />
+        <Route path="/FamilyAndLife/:category?" element={<FamilyAndLife />} />
         <Route path="/honorList" element={<HonorList />} />
         <Route path="/article" element={<ArticleTest />} />
         <Route path="/SignUp" element={<SignUp />} />

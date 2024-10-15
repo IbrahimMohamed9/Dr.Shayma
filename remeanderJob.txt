@@ -1,8 +1,5 @@
 ### Tasks to be completed:
 
-1. **Main Topics Image Button (Home Page):**
-   -  fix the position.
-
 2. **Carousel:**
    - Implement a carousel for:
      - **Home Page:** Display the most important topics in a prominent position.

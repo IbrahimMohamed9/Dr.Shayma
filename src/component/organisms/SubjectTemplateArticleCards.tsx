@@ -1,16 +1,17 @@
 import { FC } from "react";
 import SubjectTemplateArticleCard from "../molecules/SubjectTemplateArticleCard";
-import { ArticleType } from "../../types";
+import { useRecoilState } from "recoil";
+import articlesState from "../../assets/atoms/articlesAtoms";
 
 type SubjectTemplateArticleCardsProps = {
-  articles: ArticleType[];
   color: string;
 };
 
 const SubjectTemplateArticleCards: FC<SubjectTemplateArticleCardsProps> = ({
-  articles,
   color,
 }) => {
+  const [articles] = useRecoilState(articlesState);
+
   return (
     <div className="flex flex-col p-4 border border-gray-300 rounded-lg gap-y-4 my-7">
       {articles.map((article, index) => (

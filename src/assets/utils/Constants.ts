@@ -4,10 +4,10 @@ export const MAIN_TOPICS = "المواضيع الرئيسية";
 
 // Categories of Topics
 export enum Categories {
-  RAISING = "التربية",
-  DOCTRINAL_EDUCATION = "التربية العقائدية",
-  HEALTH = "الصحة",
-  FAMILY_AND_LIFE = "الأسرة والحياة",
+  RAISING = "Raising",
+  DOCTRINAL_EDUCATION = "DoctrinalEducation",
+  HEALTH = "Health",
+  FAMILY_AND_LIFE = "FamilyAndLife",
 }
 
 // If you need to use these values elsewhere, you can use the enum values directly:
