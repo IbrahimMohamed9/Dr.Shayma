@@ -4,13 +4,13 @@ import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { LOGO_DESCRIPTION } from "../../assets/utils/Constants";
 import FooterWordList from "./../atoms/FooterWordList";
+import { Link } from "react-router-dom";
 const Footer = () => {
   const whoWeAre = [
     { navTo: "", content: "من نحن؟" },
     { navTo: "/aboutUs", content: "اعرف عنا" },
     { navTo: "/honorList", content: "لائحة الشرف" },
   ];
-
   const topics = [
     { navTo: "", content: "المواضيع" },
     { navTo: "/DoctrinalEducation", content: "التربية العقائدية" },
@@ -18,7 +18,6 @@ const Footer = () => {
     { navTo: "/Raising", content: "التربية" },
     { navTo: "/Health", content: "الصحة" },
   ];
-
   const mostPopularArticles = [
     { navTo: "", content: "اشهر المقالات" },
     { navTo: "/thinkingEducation", content: "التربية بالتفكر" },
@@ -31,10 +30,8 @@ const Footer = () => {
       content: "التربية الجنسية في الإسلام",
     },
   ];
-
   const commonSvgClasses =
     "size-8 border-2 p-1 rounded-full transition-all duration-300";
-
   const socialMediaIcons = [
     {
       icon: FaXTwitter,
@@ -60,26 +57,34 @@ const Footer = () => {
       link: "https://www.facebook.com/profile.php?id=100002421841995",
     },
   ];
+
+  const socialMediaIconsElements = socialMediaIcons.map((item, index) => (
+    <li key={index}>
+      <a href={item.link}>
+        <item.icon className={item.styles + " " + commonSvgClasses}></item.icon>
+      </a>
+    </li>
+  ));
+
   return (
-    <footer className="bg-black py-12">
-      <div className={`container  flex justify-between flex-row-reverse`}>
+    <footer className="bg-black py-8 xs:py-12">
+      <div className="container flex flex-col-reverse items-center max-xs:gap-y-4 xs:justify-between xs:flex-row-reverse">
         <div className="flex items-center flex-col">
-          <img src={logo} alt={LOGO_DESCRIPTION} className="w-32 mb-8" />
-          <ul className="flex gap-10">
-            {socialMediaIcons.map((item, index) => (
-              <li key={index}>
-                <a href={item.link}>
-                  <item.icon
-                    className={item.styles + " " + commonSvgClasses}
-                  ></item.icon>
-                </a>
-              </li>
-            ))}
-          </ul>
+          <Link to="/">
+            <img
+              src={logo}
+              alt={LOGO_DESCRIPTION}
+              className="w-32 mb-4 xs:mb-8"
+            />
+          </Link>
+          <ul className="flex gap-10">{socialMediaIconsElements}</ul>
         </div>
-        <FooterWordList content={mostPopularArticles} />
-        <FooterWordList content={topics} />
-        <FooterWordList content={whoWeAre} />
+        <FooterWordList
+          className="max-xs:text-center"
+          content={mostPopularArticles}
+        />
+        <FooterWordList className="max-sm:hidden" content={topics} />
+        <FooterWordList className="max-xs:text-center" content={whoWeAre} />
       </div>
     </footer>
   );

@@ -5,7 +5,7 @@ import SectionHeader from "./../atoms/SectionHeader";
 import SubjectCategoriesList from "./../molecules/SubjectCategoriesList";
 import SubjectTemplateArticleCards from "../organisms/SubjectTemplateArticleCards";
 import { Categories } from "../../assets/utils/Constants";
-import RestClient from "../../assets/utils/RestClient";
+import RestClient from "../../assets/customHooks/RestClient";
 import { useRecoilState } from "recoil";
 import subjectCategoryState from "../../assets/atoms/subjectCategories";
 import articlesState from "../../assets/atoms/articlesAtoms";

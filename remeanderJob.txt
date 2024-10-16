@@ -23,11 +23,17 @@ Waiting the designer:
 1. **Contact Us Page:**
    - impelement the page.
 
-2. **Scrollbar Design:**
+4. **Header for Mobile:**
+   - Ensure the responsivity of the header.
+
+
+
+
+
+In Feuture:
+1. **Scrollbar Design:**
    - Customize the design of the scrollbar to align with the overall site aesthetics.
 
-3. **Text Selection Design:**
-    - Implement a unique design for text selection, improving user experience and engagement.
-
-4. **Header and Footer for Mobile:**
-   - Ensure the header and footer are responsive.
+2. **Text Selection Design:**
+   - Implement a unique design for text selection, improving user experience and engagement.
+ 

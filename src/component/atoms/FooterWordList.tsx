@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 
 type FooterWordListProps = {
   content: contentType[];
+  className?: string;
 };
 type contentType = {
   content: string;
   navTo: string;
 };
 
-const FooterWordList: FC<FooterWordListProps> = ({ content }) => {
+const FooterWordList: FC<FooterWordListProps> = ({ content, className }) => {
   const wordsElementList = content.map((word, index) =>
     index ? (
       <li key={index}>
@@ -27,7 +28,7 @@ const FooterWordList: FC<FooterWordListProps> = ({ content }) => {
     )
   );
 
-  return <ul>{wordsElementList}</ul>;
+  return <ul className={className}>{wordsElementList}</ul>;
 };
 
 export default FooterWordList;
