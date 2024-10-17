@@ -4,11 +4,11 @@ import MostImportantArticles from "./../organisms/MostImportantArticles";
 
 const Home = () => {
   return (
-    <>
+    <div>
       <FirstHomeSection />
       <MostImportantArticles />
       <MainTopics />
-    </>
+    </div>
   );
 };
 
