@@ -1,14 +1,11 @@
-import { FC } from "react";
+import { useRecoilState } from "recoil";
 import SectionHeader from "../atoms/SectionHeader";
-import BookCard from "./../molecules/BookCard";
+import booksState from "../../assets/atoms/booksState";
+import BookCard from "../molecules/BookCard";
 
-type Book = {
-  title: string;
-  imgSrc: string;
-}
+const BooksSection = () => {
+  const [books] = useRecoilState(booksState);
 
-
-const BooksSection: FC<{ books: Book[] }> = ({ books }) => {
   const bookElementsList = books.map((book, index) => (
     <BookCard title={book.title} imgSrc={book.imgSrc} key={index} />
   ));
