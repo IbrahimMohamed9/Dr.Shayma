@@ -1,13 +1,13 @@
 import { FC } from "react";
 import SubjectTemplateArticleCard from "../molecules/SubjectTemplateArticleCard";
 import { useRecoilState } from "recoil";
-import articlesState from "../../assets/atoms/articlesAtoms";
+import articlesState from "../../assets/atoms/articlesState";
 
-type SubjectTemplateArticleCardsProps = {
+type ArticleCardsSubjectTemplateProps = {
   color: string;
 };
 
-const SubjectTemplateArticleCards: FC<SubjectTemplateArticleCardsProps> = ({
+const ArticleCardsSubjectTemplate: FC<ArticleCardsSubjectTemplateProps> = ({
   color,
 }) => {
   const [articles] = useRecoilState(articlesState);
@@ -26,4 +26,4 @@ const SubjectTemplateArticleCards: FC<SubjectTemplateArticleCardsProps> = ({
   );
 };
 
-export default SubjectTemplateArticleCards;
+export default ArticleCardsSubjectTemplate;

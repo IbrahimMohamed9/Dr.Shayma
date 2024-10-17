@@ -1,71 +1,59 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import utils from "../../assets/utils/utils";
 import SubjectTemplateImage from "./../atoms/SubjectTemplateImage";
 import SectionHeader from "./../atoms/SectionHeader";
 import SubjectCategoriesList from "./../molecules/SubjectCategoriesList";
-import SubjectTemplateArticleCards from "../organisms/SubjectTemplateArticleCards";
-import { Categories } from "../../assets/utils/Constants";
-import RestClient from "../../assets/customHooks/RestClient";
+import ArticleCardsSubjectTemplate from "../organisms/ArticleCardsSubjectTemplate";
+import { fetchData } from "../../assets/customHooks/RestClient";
 import { useRecoilState } from "recoil";
-import subjectCategoryState from "../../assets/atoms/subjectCategories";
-import articlesState from "../../assets/atoms/articlesAtoms";
-import LoaderSpinner from "../atoms/LoaderSpinner";
+import subjectCategoryState from "../../assets/atoms/subjectState";
+import articlesState from "../../assets/atoms/articlesState";
 import { useParams } from "react-router-dom";
+import LoadingAndErrorMsg from "../molecules/LoadingAndErrorMsg";
 
-type SubjectTemplateProps = {
-  title: string;
-  category: Categories;
-};
-
-const SubjectTemplate: FC<SubjectTemplateProps> = ({ title, category }) => {
+const SubjectTemplate = () => {
+  const param = useParams();
+  const { category, subcategory } = param;
   const { bigImg, color, hexColor } = utils.categoryDetails(category);
 
   const [, setCategories] = useRecoilState(subjectCategoryState);
   const [, setArticles] = useRecoilState(articlesState);
-  const param = useParams().category;
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<any>(null);
+  const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        if (param) {
-          const { data } = await RestClient(`/articles`);
-          setArticles(data);
-          //TODO:: it logged two times fix that
-          console.log(data);
-        } else {
-          const response = await RestClient(`/${category}`);
-          setCategories(response.data.categories);
-          setArticles(response.data.articles);
-        }
+    console.log(category);
+    console.log(subcategory);
 
-        setLoading(false);
-      } catch (err) {
-        setError(err);
-        setLoading(false);
+    const setters = { setLoading, setError, setData };
+    if (subcategory) {
+      fetchData("/articles", setters);
+    } else {
+      fetchData(`/${category}`, setters);
+    }
+  }, [category, subcategory]);
+
+  useEffect(() => {
+    if (typeof data === "object" && data !== null) {
+      if (Array.isArray(data)) {
+        setArticles(data);
+      } else {
+        setCategories(data.categories);
+        setArticles(data.articles);
       }
-    };
+    }
+  }, [data, setCategories, setArticles]);
 
-    fetchData();
-  }, [category, setCategories, setArticles, param]);
-
-  if (loading) {
-    return <LoaderSpinner isVisible={loading} color={hexColor} />;
-  }
-
-  if (error) {
-    console.error(error);
-    return <div></div>;
-  }
-
-  return (
+  return loading || error || !data ? (
+    <LoadingAndErrorMsg loading={loading} error={error} hexColor={hexColor} />
+  ) : (
     <div>
-      <SubjectTemplateImage imgSrc={bigImg} title={title} />
+      <SubjectTemplateImage imgSrc={bigImg} title={category} />
       <div className="container">
         <SectionHeader content="المقالات" />
         <SubjectCategoriesList color={color} />
-        <SubjectTemplateArticleCards color={color} />
+        <ArticleCardsSubjectTemplate color={color} />
       </div>
     </div>
   );

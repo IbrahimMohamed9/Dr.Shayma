@@ -1,7 +1,7 @@
 import { FC } from "react";
 import SubjectCategory from "../atoms/SubjectCategory";
 import { useRecoilState } from "recoil";
-import subjectCategoryState from "../../assets/atoms/subjectCategories";
+import subjectCategoryState from "../../assets/atoms/subjectState";
 
 type SubjectCategoriesListProps = {
   color: string;
