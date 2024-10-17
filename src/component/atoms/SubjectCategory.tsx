@@ -23,7 +23,7 @@ const SubjectCategory: FC<subjectCategoryProps> = ({
       return;
     }
 
-    if (pathParts.length === 3) {
+    if (pathParts.length === 4) {
       pathParts.pop();
     }
 

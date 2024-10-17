@@ -17,8 +17,6 @@
 7. **Dynamic Breadcrumb for Article Page:**
     - Make the breadcrumb navigation on the article pages more dynamic, reflecting the current page structure more accurately.
 
-
-
 Waiting the designer:
 1. **Contact Us Page:**
    - impelement the page.

@@ -125,7 +125,13 @@
       }
     ]
   },
-
+  "books": [
+    { "title": "عقيدة طفلي من 3-5", "imgSrc": "imgSrc" },
+    { "title": "عقيدة طفلي من 3-5", "imgSrc": "imgSrc" },
+    { "title": "عقيدة طفلي من 3-5", "imgSrc": "imgSrc" },
+    { "title": "عقيدة طفلي من 3-5", "imgSrc": "imgSrc" },
+    { "title": "عقيدة طفلي من 3-5", "imgSrc": "imgSrc" }
+  ],
   "articles": [
     {
       "title": "test طمّني",

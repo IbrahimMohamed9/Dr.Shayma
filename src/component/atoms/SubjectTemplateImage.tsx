@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 type SubjectTemplateImageProps = {
-  title: string;
+  title?: string;
   imgSrc: string;
 };
 

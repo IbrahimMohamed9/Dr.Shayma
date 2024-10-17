@@ -15,7 +15,7 @@ import raisingBigImage from "../../assets/images/التربية مقال.png";
 import healthBigImage from "../../assets/images/الصحة مقال.png";
 
 type CategoryDetails = {
-  category: Categories;
+  category: Categories | string | undefined;
   color: string;
   hexColor: string;
   smallImg: any;
@@ -24,7 +24,7 @@ type CategoryDetails = {
 };
 
 const utils = {
-  categoryDetails: (category: Categories): CategoryDetails => {
+  categoryDetails: (category: string | undefined): CategoryDetails => {
     switch (category) {
       case RAISING:
         return {
@@ -62,6 +62,15 @@ const utils = {
           smallImg: familyAndLifeSmallImage,
           bigImg: familyAndLifeBigImage,
           navTo: "FamilyAndLife",
+        };
+      default:
+        return {
+          category: "There is a problem please check the category",
+          color: "main-orange",
+          hexColor: "#000000",
+          smallImg: raisingSmallImage,
+          bigImg: raisingBigImage,
+          navTo: "No",
         };
     }
   },

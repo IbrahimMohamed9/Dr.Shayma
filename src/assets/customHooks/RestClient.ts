@@ -72,4 +72,23 @@ const RestClient = async (
   }
 };
 
-export default RestClient;
+interface Setters {
+  setLoading?: (loading: boolean) => void;
+  setError?: (error: any) => void;
+  setData?: (data: any) => void;
+}
+
+const fetchData = async (endpoint: string, setters: Setters = {}) => {
+  const { setLoading, setError, setData } = setters;
+
+  try {
+    const { data } = await RestClient(endpoint);
+    setData && setData(data);
+    setLoading && setLoading(false);
+  } catch (err) {
+    setError && setError(err);
+    setLoading && setLoading(false);
+  }
+};
+
+export { RestClient, fetchData };
