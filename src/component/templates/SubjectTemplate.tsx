@@ -7,13 +7,12 @@ import ArticleCardsSubjectTemplate from "../organisms/ArticleCardsSubjectTemplat
 import { fetchData } from "../../assets/customHooks/RestClient";
 import { useRecoilState } from "recoil";
 import subjectCategoryState from "../../assets/atoms/subjectState";
-import articlesState from "../../assets/atoms/articlesState";
+import articlesState from "../../assets/atoms/articlesCardState";
 import { useParams } from "react-router-dom";
 import LoadingAndErrorMsg from "../molecules/LoadingAndErrorMsg";
 
 const SubjectTemplate = () => {
-  const param = useParams();
-  const { category, subcategory } = param;
+  const { category, subcategory } = useParams();
   const { bigImg, color, hexColor } = utils.categoryDetails(category);
 
   const [, setCategories] = useRecoilState(subjectCategoryState);
@@ -23,9 +22,6 @@ const SubjectTemplate = () => {
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    console.log(category);
-    console.log(subcategory);
-
     const setters = { setLoading, setError, setData };
     if (subcategory) {
       fetchData("/articles", setters);

@@ -4,7 +4,7 @@ import { LOGO_DESCRIPTION } from "./../../assets/utils/Constants";
 
 const HeaderLogo = () => {
   return (
-    <Link to="/home">
+    <Link to="/">
       <img
         src={logo}
         alt={LOGO_DESCRIPTION}

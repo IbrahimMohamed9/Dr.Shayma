@@ -8,6 +8,7 @@ export type PersonInfo = {
 };
 
 export type CommentType = PersonInfo & {
+  id: number;
   comment: string;
 };
 
@@ -15,7 +16,9 @@ export type ArticleType = {
   title: string;
   description: string;
   imgSrc: string;
-  link: string;
+  category: string;
+  subcategory: string;
+  articleId: string;
 };
 
 export type PatternValidationType = {

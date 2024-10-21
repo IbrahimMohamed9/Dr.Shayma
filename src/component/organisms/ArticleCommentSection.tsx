@@ -7,11 +7,13 @@ type ArticleCommentSectionProps = {
   comments: CommentType[];
 }
 
-const ArticleCommentSection: FC<ArticleCommentSectionProps> = (props) => {
+const ArticleCommentSection: FC<ArticleCommentSectionProps> = ({
+  comments,
+}) => {
   return (
     <div>
       <CommentInput />
-      <ArticleComments comments={props.comments} />
+      <ArticleComments comments={comments} />
     </div>
   );
 };

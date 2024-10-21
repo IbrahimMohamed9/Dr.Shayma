@@ -14,7 +14,7 @@ const SubjectCategory: FC<subjectCategoryProps> = ({
 }) => {
   const location = useLocation();
   const navigate = useNavigate();
-  const param = useParams().category;
+  const param = useParams().subcategory;
   const pathParts = location.pathname.split("/");
 
   // This onClick deletes the param from the URL if the param is not the same and replaces it with the new one

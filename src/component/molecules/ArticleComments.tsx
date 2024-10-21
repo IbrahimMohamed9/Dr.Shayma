@@ -9,9 +9,9 @@ type ArticleCommentsProps = {
 const ArticleComments: FC<ArticleCommentsProps> = ({ comments }) => {
   return (
     <div className="mt-8">
-      {comments.map((comment, index) => (
+      {comments.map((comment) => (
         <ArticleComment
-          key={index}
+          key={comment.id}
           name={comment.name}
           imgSrc={comment.imgSrc}
           comment={comment.comment}

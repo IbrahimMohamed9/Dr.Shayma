@@ -4,18 +4,13 @@
    - Implement a carousel for:
      - **Home Page:** Display the most important topics in a prominent position.
      - **Subject Page:** Create a carousel for subcategories under the title.
+     - **Article Page:** breadcrumb.
 
 4. **Topics in the Header:**
    - Complete the implementation of main topics in the header for quick access.
 
-5. **Fix Telegram and WhatsApp Links in Footer:**
-   - Ensure the Telegram and WhatsApp links in the footer are functional and redirect correctly.
-
 6. **Add Meta Description:**
    - Insert meta descriptions on all relevant pages to improve SEO and search visibility.
-
-7. **Dynamic Breadcrumb for Article Page:**
-    - Make the breadcrumb navigation on the article pages more dynamic, reflecting the current page structure more accurately.
 
 Waiting the designer:
 1. **Contact Us Page:**

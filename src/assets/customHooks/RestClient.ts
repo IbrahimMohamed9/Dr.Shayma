@@ -46,20 +46,20 @@ restClientAxios.interceptors.response.use(
 
 const RestClient = async (
   url: string,
-  method: string = "get",
+  method: string = "GET",
   params?: any
 ) => {
   try {
     let response: AxiosResponse;
 
     switch (method) {
-      case "post":
+      case "POST":
         response = await restClientAxios.post(url, params);
         break;
-      case "put":
+      case "PUT":
         response = await restClientAxios.put(url, params);
         break;
-      case "delete":
+      case "DELETE":
         response = await restClientAxios.delete(url);
         break;
       default:

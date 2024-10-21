@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HeaderWordList = () => {
   const content = [
-    { navigateTo: "/home", content: "الرئيسية" },
+    { navigateTo: "/", content: "الرئيسية" },
     { navigateTo: "/aboutUs", content: "اعرف عنا" },
     { navigateTo: "/contactUs", content: "تواصل معانا" },
   ];

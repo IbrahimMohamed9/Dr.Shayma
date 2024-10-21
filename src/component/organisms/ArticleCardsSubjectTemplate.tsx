@@ -1,7 +1,7 @@
 import { FC } from "react";
 import SubjectTemplateArticleCard from "../molecules/SubjectTemplateArticleCard";
 import { useRecoilState } from "recoil";
-import articlesState from "../../assets/atoms/articlesState";
+import articlesState from "../../assets/atoms/articlesCardState";
 
 type ArticleCardsSubjectTemplateProps = {
   color: string;
