@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="topic/:category/:subcategory?/">
+        <Route path="articles/:category/:subcategory?/">
           <Route index element={<SubjectTemplate />} />
           <Route path=":articleId" element={<ArticleTemplate />} />
         </Route>

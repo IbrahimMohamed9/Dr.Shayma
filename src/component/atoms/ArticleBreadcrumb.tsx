@@ -17,9 +17,9 @@ const ArticleBreadcrumb: FC<ArticleBreadcrumbProps> = ({
       <nav className="text-sm overflow-x-auto">
         <Link to="/">الرئيسية</Link>
         <span className="mx-2">{">>"}</span>
-        <Link to={"/topic/" + category}>{category}</Link>
+        <Link to={"/articles/" + category}>{category}</Link>
         <span className="mx-2">{">>"}</span>
-        <Link to={`/topic/${category}/${subcategory}`}>{subcategory}</Link>
+        <Link to={`/articles/${category}/${subcategory}`}>{subcategory}</Link>
       </nav>
     </div>
   );
