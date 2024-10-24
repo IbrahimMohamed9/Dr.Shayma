@@ -1,26 +1,14 @@
+import mostFamousArticlesState from "../../assets/atoms/mostFamousArticle";
+import { Navigation, Pagination } from "swiper/modules";
 import ArticleCard from "./../molecules/ArticleCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
+import { useRecoilState } from "recoil";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useRecoilState } from "recoil";
-import mostFamousArticlesState from "../../assets/atoms/mostFamousArticle";
+import "swiper/css";
 
 const ArticleCards = () => {
   const [cardsList] = useRecoilState(mostFamousArticlesState);
-
-  const articles = cardsList.map((card, index) => (
-    <SwiperSlide key={index}>
-      <ArticleCard
-        category={card.category}
-        title={card.title}
-        description={card.description}
-        date={card.date}
-        imgSrc={card.imgSrc}
-      />
-    </SwiperSlide>
-  ));
 
   const getSlidesPerView = () => {
     const width = window.innerWidth;
@@ -46,6 +34,18 @@ const ArticleCards = () => {
     }
     return 1.47;
   };
+
+  const articles = cardsList.map((card, index) => (
+    <SwiperSlide key={index}>
+      <ArticleCard
+        category={card.category}
+        title={card.title}
+        description={card.description}
+        date={card.date}
+        imgSrc={card.imgSrc}
+      />
+    </SwiperSlide>
+  ));
 
   return (
     <Swiper
