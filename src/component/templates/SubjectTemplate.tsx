@@ -44,13 +44,11 @@ const SubjectTemplate = () => {
   return loading || error || !data ? (
     <LoadingAndErrorMsg loading={loading} error={error} hexColor={hexColor} />
   ) : (
-    <div>
+    <div className="container">
       <SubjectTemplateImage imgSrc={bigImg} title={category} />
-      <div className="container">
-        <SectionHeader content="المقالات" />
-        <SubjectCategoriesList color={color} />
-        <ArticleCardsSubjectTemplate color={color} />
-      </div>
+      <SectionHeader content="المقالات" />
+      <SubjectCategoriesList color={color} />
+      <ArticleCardsSubjectTemplate color={color} />
     </div>
   );
 };

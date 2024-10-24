@@ -18,7 +18,7 @@ const ArticleCard: FC<ArticleCardProps> = ({
   imgSrc,
 }) => {
   return (
-    <div className="flex flex-col rounded-md shadow-md w-190 sm:w-360">
+    <div className="flex flex-col rounded-md shadow-md w-190 md:w-190 lg:w-360">
       <img src={imgSrc} alt={title} className="rounded-lg w-fit " />
       <ArticleCardText
         category={category}

@@ -72,18 +72,45 @@ const ArticleCards = () => {
     </SwiperSlide>
   ));
 
+  const getSlidesPerView = () => {
+    const width = window.innerWidth;
+    switch (true) {
+      case width >= 1280:
+        return 3;
+      case width >= 1200:
+        return 2.7;
+      case width >= 1024:
+        return 2.5;
+      case width >= 768:
+        return 3.6;
+      case width >= 640:
+        return 2.5;
+      case width >= 480:
+        return 2.2;
+      case width >= 390:
+        return 1.8;
+      case width >= 370:
+        return 1.7;
+      case width >= 325:
+        return 1.5;
+    }
+    return 1.47;
+  };
+  console.log(getSlidesPerView());
+
   return (
     <Swiper
       dir="rtl"
       navigation={true}
       pagination={{
         dynamicBullets: true,
+        clickable: true,
       }}
       modules={[Navigation, Pagination]}
-      className="h-[25rem]"
-      slidesPerView={2.5}
+      className="h-80 lg:h-[25rem]"
+      slidesPerView={getSlidesPerView()}
       centeredSlides={true}
-      spaceBetween={0}
+      grabCursor={true}
     >
       {articles}
     </Swiper>

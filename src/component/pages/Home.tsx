@@ -6,8 +6,10 @@ const Home = () => {
   return (
     <div>
       <FirstHomeSection />
-      <MostImportantArticles />
-      <MainTopics />
+      <div className="container">
+        <MostImportantArticles />
+        <MainTopics />
+      </div>
     </div>
   );
 };

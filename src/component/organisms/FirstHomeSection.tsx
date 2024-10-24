@@ -9,10 +9,9 @@ const FirstHomeSection = () => {
   return (
     <BorderAroundSection
       bgColor="bg-gradient-to-l from-white via-cyan to-cyan"
-      className="container"
       flex={true}
     >
-      <div className="md:w-2/3 px-2 min-h-fit text-2xl md:text-4xl md:flex md:flex-col md:justify-center">
+      <div className="px-2 max-w-full min-h-fit text-2xl md:w-2/3 md:text-4xl md:flex md:flex-col md:justify-center">
         <p className="md:block-fit">
           عقيدة سليمة هي أثمن ما نقدمه لأبنائنا؛ فكيف نغرسها في نفوسهم؟ هذا هو
           ما سنبحر فيه معا حتى نصل بأبنائنا لبر الأمان، فالتوحيد هو أجل غاية
