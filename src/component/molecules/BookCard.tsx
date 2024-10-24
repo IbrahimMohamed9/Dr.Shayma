@@ -8,7 +8,7 @@ type BookCardProps = {
 
 const BookCard: FC<BookCardProps> = ({ imgSrc, title }) => {
   return (
-    <div className="border-2 border-royal-blue rounded-[0.5rem] overflow-hidden min-w-48">
+    <div className="border-2 border-royal-blue rounded-[0.5rem] overflow-hidden w-48">
       <img
         src={imgSrc}
         alt={title}
