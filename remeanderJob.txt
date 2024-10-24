@@ -4,9 +4,12 @@
    - Implement a carousel for:
      - **Subject Page:** Create a carousel for subcategories under the title.
      - **Article Page:** breadcrumb.
+     - **About us Page:** book.
 
 2. **Add Meta Description:**
    - Insert meta descriptions on all relevant pages to improve SEO and search visibility.
+
+3. **Fix fetchData Function**
 
 Waiting the designer:
 1. **Contact Us Page:**

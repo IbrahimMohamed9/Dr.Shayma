@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Categories } from "../../assets/utils/Constants";
 
-function getCardCategoryColor(category: Categories) {
+function getCardCategoryColor(category: string) {
   switch (category) {
     case Categories.RAISING:
       return "main-blue";
@@ -17,7 +17,7 @@ function getCardCategoryColor(category: Categories) {
 }
 
 type ArticleCardTextProps = {
-  category: Categories;
+  category: string;
   title: string;
   description: string;
   date: string;

@@ -1,9 +1,8 @@
 import { FC } from "react";
 import ArticleCardText from "../atoms/ArticleCardText";
-import { Categories } from "../../assets/utils/Constants";
 
 type ArticleCardProps = {
-  category: Categories;
+  category: string;
   title: string;
   description: string;
   date: string;

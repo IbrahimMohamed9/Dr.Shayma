@@ -182,6 +182,29 @@
       }
     ]
   },
+  "mostFamousArticles": [
+    {
+      "category": "DoctrinalEducation",
+      "title": "ارتفاع أسعار الأسهم",
+      "description": "أسعار الأسهم تشهد ارتفاعًا كبيرًا في الأسواق العالمية.",
+      "date": "2024-07-05",
+      "imgSrc": "https://placehold.co/360x190"
+    },
+    {
+      "category": "DoctrinalEducation",
+      "title": "ارتفاع أسعار الأسهم",
+      "description": "أسعار الأسهم تشهد ارتفاعًا كبيرًا في الأسواق العالمية.",
+      "date": "2024-07-05",
+      "imgSrc": "https://placehold.co/360x190"
+    },
+    {
+      "category": "DoctrinalEducation",
+      "title": "ارتفاع أسعار الأسهم",
+      "description": "أسعار الأسهم تشهد ارتفاعًا كبيرًا في الأسواق العالمية.",
+      "date": "2024-07-05",
+      "imgSrc": "https://placehold.co/360x190"
+    }
+  ],
   "books": [
     {
       "title": "عقيدة طفلي من 3-5",

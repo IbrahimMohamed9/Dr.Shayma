@@ -1,64 +1,14 @@
 import ArticleCard from "./../molecules/ArticleCard";
-import { Categories } from "../../assets/utils/Constants";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import "./styles.css";
+import { useRecoilState } from "recoil";
+import mostFamousArticlesState from "../../assets/atoms/mostFamousArticle";
 
 const ArticleCards = () => {
-  const cardsList = [
-    {
-      category: Categories.DOCTRINAL_EDUCATION,
-      title: "إطلاق هاتف جديد",
-      description: "شركة XYZ تطلق هاتفًا جديدًا بمواصفات متقدمة.",
-      date: "2024-07-01",
-      imgSrc: "https://placehold.co/360x190",
-    },
-    {
-      category: Categories.DOCTRINAL_EDUCATION,
-      title: "إطلاق هاتف جديد",
-      description: "شركة XYZ تطلق هاتفًا جديدًا بمواصفات متقدمة.",
-      date: "2024-07-01",
-      imgSrc: "https://placehold.co/360x190",
-    },
-    {
-      category: Categories.DOCTRINAL_EDUCATION,
-      title: "إطلاق هاتف جديد",
-      description: "شركة XYZ تطلق هاتفًا جديدًا بمواصفات متقدمة.",
-      date: "2024-07-01",
-      imgSrc: "https://placehold.co/360x190",
-    },
-    {
-      category: Categories.DOCTRINAL_EDUCATION,
-      title: "فوز الفريق الوطني",
-      description: "الفريق الوطني يحقق فوزًا مثيرًا في البطولة العالمية.",
-      date: "2024-07-02",
-      imgSrc: "https://placehold.co/360x190",
-    },
-    {
-      category: Categories.DOCTRINAL_EDUCATION,
-      title: "نصائح صحية جديدة",
-      description: "خبراء الصحة يقدمون نصائح جديدة للحفاظ على اللياقة البدنية.",
-      date: "2024-07-03",
-      imgSrc: "https://placehold.co/360x190",
-    },
-    {
-      category: Categories.DOCTRINAL_EDUCATION,
-      title: "مهرجان الفيلم الدولي",
-      description: "مهرجان الفيلم الدولي يجذب آلاف الزوار.",
-      date: "2024-07-04",
-      imgSrc: "https://placehold.co/360x190",
-    },
-    {
-      category: Categories.DOCTRINAL_EDUCATION,
-      title: "ارتفاع أسعار الأسهم",
-      description: "أسعار الأسهم تشهد ارتفاعًا كبيرًا في الأسواق العالمية.",
-      date: "2024-07-05",
-      imgSrc: "https://placehold.co/360x190",
-    },
-  ];
+  const [cardsList] = useRecoilState(mostFamousArticlesState);
 
   const articles = cardsList.map((card, index) => (
     <SwiperSlide key={index}>
@@ -96,7 +46,6 @@ const ArticleCards = () => {
     }
     return 1.47;
   };
-  console.log(getSlidesPerView());
 
   return (
     <Swiper
