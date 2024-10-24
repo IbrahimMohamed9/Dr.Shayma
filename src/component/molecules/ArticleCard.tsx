@@ -8,7 +8,7 @@ type ArticleCardProps = {
   description: string;
   date: string;
   imgSrc: string;
-}
+};
 
 const ArticleCard: FC<ArticleCardProps> = ({
   category,

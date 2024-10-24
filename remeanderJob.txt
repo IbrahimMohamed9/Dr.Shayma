@@ -1,33 +1,15 @@
 ### Tasks to be completed:
 
-2. **Carousel:**
+1. **Carousel:**
    - Implement a carousel for:
-     - **Home Page:** Display the most important topics in a prominent position.
      - **Subject Page:** Create a carousel for subcategories under the title.
      - **Article Page:** breadcrumb.
 
-4. **Topics in the Header:**
-   - Complete the implementation of main topics in the header for quick access.
-
-6. **Add Meta Description:**
+2. **Add Meta Description:**
    - Insert meta descriptions on all relevant pages to improve SEO and search visibility.
 
 Waiting the designer:
 1. **Contact Us Page:**
    - impelement the page.
 
-4. **Header for Mobile:**
-   - Ensure the responsivity of the header.
-   from here https://www.geeksforgeeks.org/mysql-update-statement/
-
 book design from here https://store.alhusaini.net/
-
-
-
-In Feuture:
-1. **Scrollbar Design:**
-   - Customize the design of the scrollbar to align with the overall site aesthetics.
-
-2. **Text Selection Design:**
-   - Implement a unique design for text selection, improving user experience and engagement.
- 

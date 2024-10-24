@@ -1,5 +1,11 @@
 import ArticleCard from "./../molecules/ArticleCard";
 import { Categories } from "../../assets/utils/Constants";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+// import "./styles.css";
 
 const ArticleCards = () => {
   const cardsList = [
@@ -55,20 +61,32 @@ const ArticleCards = () => {
   ];
 
   const articles = cardsList.map((card, index) => (
-    <ArticleCard
-      key={index}
-      category={card.category}
-      title={card.title}
-      description={card.description}
-      date={card.date}
-      imgSrc={card.imgSrc}
-    />
+    <SwiperSlide key={index}>
+      <ArticleCard
+        category={card.category}
+        title={card.title}
+        description={card.description}
+        date={card.date}
+        imgSrc={card.imgSrc}
+      />
+    </SwiperSlide>
   ));
 
   return (
-    <div className="flex gap-5 overflow-x-auto  overflow-visible">
+    <Swiper
+      dir="rtl"
+      navigation={true}
+      pagination={{
+        dynamicBullets: true,
+      }}
+      modules={[Navigation, Pagination]}
+      className="h-[25rem]"
+      slidesPerView={2.5}
+      centeredSlides={true}
+      spaceBetween={0}
+    >
       {articles}
-    </div>
+    </Swiper>
   );
 };
 
