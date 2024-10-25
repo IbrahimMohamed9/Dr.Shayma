@@ -9,6 +9,7 @@
    - Insert meta descriptions on all relevant pages to improve SEO and search visibility.
 
 3. **Fix fetchData Function**
+   - By using the rendering component
 
 Waiting the designer:
 1. **Contact Us Page:**

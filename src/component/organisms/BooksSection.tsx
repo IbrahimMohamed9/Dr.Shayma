@@ -50,8 +50,6 @@ const BooksSection = () => {
     return 1.2;
   };
 
-  console.log(getSlidesPerView());
-
   const bookElementsList = books.map((book, index) => (
     <SwiperSlide key={index}>
       <BookCard title={book.title} imgSrc={book.imgSrc} />

@@ -9,6 +9,7 @@ const FirstHomeSection = () => {
   return (
     <BorderAroundSection
       bgColor="bg-gradient-to-l from-white via-cyan to-cyan"
+      className="container max-w-full"
       flex={true}
     >
       <div className="px-2 max-w-full min-h-fit text-2xl md:w-2/3 md:text-4xl md:flex md:flex-col md:justify-center">

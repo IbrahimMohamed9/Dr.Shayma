@@ -18,11 +18,6 @@ const routes = [
     href: "/contact",
     Icon: BiPhoneCall,
   },
-  {
-    title: "المواضيع",
-    href: "/topics",
-    Icon: TbArticle,
-  },
 ];
 
 export default routes;

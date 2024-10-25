@@ -8,7 +8,7 @@ const FirstAboutUsSection = () => {
   return (
     <BorderAroundSection
       bgColor="bg-main-blue bg-opacity-30 py-4"
-      className="container"
+      className="container max-w-full"
       flex={true}
     >
       <div className="md:w-2/3 px-2 min-h-fit text-2xl md:text-4xl md:flex md:flex-col md:justify-center max-w-xl">
