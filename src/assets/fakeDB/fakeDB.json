@@ -260,6 +260,20 @@
       "id": "4191"
     }
   ],
+  "mostArticlesFooter": [
+    {
+      "content": "test طمّني",
+      "navTo": "articles/Health/educationThroughSupplications/1"
+    },
+    {
+      "content": "te طمّني",
+      "navTo": "articles/Health/educationThroughSupplications/1"
+    },
+    {
+      "content": "t طمّني",
+      "navTo": "articles/Health/educationThroughSupplications/1"
+    }
+  ],
   "comments": [
     {
       "id": "d144",

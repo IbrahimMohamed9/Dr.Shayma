@@ -1,14 +1,9 @@
 ### Tasks to be completed:
 
-1. **Carousel:**
-   - Implement a carousel for:
-     - **Subject Page:** Create a carousel for subcategories under the title.
-     - **Article Page:** breadcrumb.
-
-2. **Add Meta Description:**
+1. **Add Meta Description:**
    - Insert meta descriptions on all relevant pages to improve SEO and search visibility.
 
-3. **Fix fetchData Function**
+2. **Fix fetchData Function**
    - By using the rendering component
 
 Waiting the designer:
