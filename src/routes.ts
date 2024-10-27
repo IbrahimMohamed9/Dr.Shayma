@@ -9,7 +9,7 @@ const routes = [
   },
   {
     title: "اعرف عنا",
-    href: "/aboutUs",
+    href: "/about",
     Icon: PiChatCircleBold,
   },
   {
