@@ -22,6 +22,9 @@ const SubjectTemplate = () => {
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
+    // TODO:: there is a bug if i navigate directly to subcategory
+    // the subcategories will not render to fix that make variable to render only once
+    // and subcategories api
     const setters = { setLoading, setError, setData };
     if (subcategory) {
       fetchData("/articles", setters);
